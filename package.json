@@ -1,6 +1,6 @@
 {
   "name": "@dword-design/functions",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "files": ["*.js"],
   "repository": "https://github.com/dword-design/functions",
   "author": "Sebastian Landwehr <info@dword-design.de>",
