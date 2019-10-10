@@ -1,4 +1,4 @@
-const endsWith = require('../dist/endsWith')
+const endsWith = require('../endsWith')
 
 describe('endsWith', () => {
   test('true', () => expect(endsWith('foo')('bar foo')).toBeTruthy())

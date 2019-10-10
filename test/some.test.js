@@ -1,4 +1,4 @@
-const some = require('../dist/some')
+const some = require('../some')
 
 describe('some', () => {
   test('true', () => expect(some(x => x === 2)([1, 2])).toBeTruthy())

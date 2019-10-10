@@ -1,4 +1,4 @@
-const replace = require('../dist/replace')
+const replace = require('../replace')
 
 describe('replace', () => {
   test('replace string', () => expect(replace('foo', 'bar')('baz foo baz')).toEqual('baz bar baz'))
