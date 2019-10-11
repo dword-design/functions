@@ -1,6 +1,7 @@
-const some = require('../some')
+const some = require('@dword-design/functions/some')
+const expect = require('expect')
 
 describe('some', () => {
-  test('true', () => expect(some(x => x === 2)([1, 2])).toBeTruthy())
-  test('false', () => expect(some(x => x === 2)([1, 3])).toBeFalsy())
+  it('true', () => expect(some(x => x === 2)([1, 2])).toBeTruthy())
+  it('false', () => expect(some(x => x === 2)([1, 3])).toBeFalsy())
 })

@@ -1,3 +1,4 @@
-const map = require('../map')
+const map = require('@dword-design/functions/map')
+const expect = require('expect')
 
-test('map', () => expect(map(x => x * 2)([1, 2])).toEqual([2, 4]))
+it('map', () => expect(map(x => x * 2)([1, 2])).toEqual([2, 4]))

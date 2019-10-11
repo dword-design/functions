@@ -1,6 +1,7 @@
-const endsWith = require('../endsWith')
+const endsWith = require('@dword-design/functions/endsWith')
+const expect = require('expect')
 
 describe('endsWith', () => {
-  test('true', () => expect(endsWith('foo')('bar foo')).toBeTruthy())
-  test('false', () => expect(endsWith('foo')('foo bar')).toBeFalsy())
+  it('true', () => expect(endsWith('foo')('bar foo')).toBeTruthy())
+  it('false', () => expect(endsWith('foo')('foo bar')).toBeFalsy())
 })
