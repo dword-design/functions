@@ -11,6 +11,7 @@ module.exports = {
     'fromPairs',
     'repeat',
     'omit',
+    'omitBy',
     'constant',
     'values',
     'flatten',
