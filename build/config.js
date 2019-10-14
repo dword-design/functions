@@ -70,6 +70,7 @@ module.exports = {
   drop: '(n = 1) => array => array.slice(n)',
   split: 'separator => string => string.split(separator)',
   consoleLog: 'arg => { console.log(arg); return arg }',
+  andThen: 'func => promise => promise.then(func)',
   promiseAll: 'promises => Promise.all(promises)',
   filterAsync: endent`
     callback => async collection => {

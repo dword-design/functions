@@ -1615,6 +1615,11 @@ pify@^4.0.1:
   resolved "https://registry.yarnpkg.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
   integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
 
+pipe-fns@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/pipe-fns/-/pipe-fns-1.0.1.tgz#d737aaa8f16e15946276522e50cdbd7c43f807e9"
+  integrity sha512-DdHPcysz83vcaOWv2RTps6nY5XcQ+q0z1BiOZ07LT0e947JyTF/GyySi5x/Kxp5RtYVeRVPq178J7cNr2b/bgg==
+
 pkg-dir@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-3.0.0.tgz#2749020f239ed990881b1f71210d51eb6523bea3"
