@@ -77,6 +77,7 @@ module.exports = {
       const filterResults = await Promise.all(collection.map(callback))
       return collection.filter((element, index) => filterResults[index])
     }`,
+  ifElse: '(cond, thenFunc, elseFunc = x => x) => (...args) => cond(...args) ? thenFunc(...args) : elseFunc(...args)',
 
   getLocalStorageItem: 'name => localStorage.getItem(name)',
   setLocalStorageItem: endent`
