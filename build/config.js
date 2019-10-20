@@ -1,4 +1,3 @@
-const tinycolor = require('tinycolor2')
 const endent = require('endent')
 
 module.exports = {
@@ -71,6 +70,13 @@ module.exports = {
   split: 'separator => string => string.split(separator)',
   consoleLog: 'arg => { console.log(arg); return arg }',
   then: 'func => promise => promise.then(func)',
+  tryCatch: endent`(tryer, catcher) => (...args) => {
+    try {
+      return tryer(...args)
+    } catch (error) {
+      return (catcher || (x => x))(error, ...args)
+    }
+  }`,
   promiseAll: 'promises => Promise.all(promises)',
   ary: "require('lodash/ary')",
   nullary: "func => () => func()",
