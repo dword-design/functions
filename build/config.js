@@ -72,6 +72,7 @@ module.exports = {
   consoleLog: 'arg => { console.log(arg); return arg }',
   then: 'func => promise => promise.then(func)',
   promiseAll: 'promises => Promise.all(promises)',
+  ary: "require('lodash/ary')",
   filterAsync: endent`
     callback => async collection => {
       const filterResults = await Promise.all(collection.map(callback))
