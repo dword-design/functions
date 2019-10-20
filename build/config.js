@@ -70,6 +70,7 @@ module.exports = {
   split: 'separator => string => string.split(separator)',
   consoleLog: 'arg => { console.log(arg); return arg }',
   then: 'func => promise => promise.then(func)',
+  otherwise: 'func => promise => promise.catch(func || (x => x))',
   tryCatch: endent`(tryer, catcher) => (...args) => {
     try {
       return tryer(...args)
