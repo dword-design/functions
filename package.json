@@ -10,7 +10,7 @@
   "scripts": {
     "prepare": "node build/build.cli.js",
     "pretest": "npm run prepare && install-self",
-    "test": "nyc mocha"
+    "test": "nyc --reporter lcov --reporter text mocha"
   },
   "dependencies": {
     "endent": "^1.3.0",
