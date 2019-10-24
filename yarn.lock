@@ -1329,10 +1329,10 @@ mkdirp@0.5.1, mkdirp@^0.5.0:
   dependencies:
     minimist "0.0.8"
 
-mocha@^6.2.1:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/mocha/-/mocha-6.2.1.tgz#da941c99437da9bac412097859ff99543969f94c"
-  integrity sha512-VCcWkLHwk79NYQc8cxhkmI8IigTIhsCwZ6RTxQsqK6go4UvEhzJkYuHm8B2YtlSxcYq2fY+ucr4JBwoD6ci80A==
+mocha@^6.2.2:
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/mocha/-/mocha-6.2.2.tgz#5d8987e28940caf8957a7d7664b910dc5b2fea20"
+  integrity sha512-FgDS9Re79yU1xz5d+C4rv1G7QagNGHZ+iXF81hO8zY35YZZcLEsJVfFolfsqKFWunATEvNzMK0r/CwWd/szO9A==
   dependencies:
     ansi-colors "3.2.3"
     browser-stdout "1.3.1"
@@ -1540,10 +1540,10 @@ os-homedir@^1.0.1:
   resolved "https://registry.yarnpkg.com/os-homedir/-/os-homedir-1.0.2.tgz#ffbc4988336e0e833de0c168c7ef152121aa7fb3"
   integrity sha1-/7xJiDNuDoM94MFox+8VISGqf7M=
 
-output-files@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/output-files/-/output-files-1.0.1.tgz#2313648154a010d2bd39fa18948ac986a5384920"
-  integrity sha512-XBx/sIxPjfT29nK3QNwo6TAsM30Chp8Fh75mKUHFuFyHq6M7ABpi7aRQWERG2ClYSZqjV1w6XACUr2WLrBkPkA==
+output-files@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/output-files/-/output-files-1.1.1.tgz#60f8fe7d6a590949173a28cb7ea52491f4c398e1"
+  integrity sha512-T/BY+w8D9ARmlOFijlhRenUnaV7FCKligXrJKs3H6m250ny+9R57fYDPOIR00abiEke+COCzHm8bf72zISVojg==
   dependencies:
     fs-extra "^8.1.0"
     lodash "^4.17.15"
@@ -1621,11 +1621,6 @@ pify@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
   integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
-
-pipe-fns@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/pipe-fns/-/pipe-fns-1.0.1.tgz#d737aaa8f16e15946276522e50cdbd7c43f807e9"
-  integrity sha512-DdHPcysz83vcaOWv2RTps6nY5XcQ+q0z1BiOZ07LT0e947JyTF/GyySi5x/Kxp5RtYVeRVPq178J7cNr2b/bgg==
 
 pkg-dir@^3.0.0:
   version "3.0.0"

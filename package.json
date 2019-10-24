@@ -1,6 +1,6 @@
 {
   "name": "@dword-design/functions",
-  "version": "0.7.6",
+  "version": "0.7.7",
   "files": [
     "*.js"
   ],
@@ -23,9 +23,8 @@
     "fs-extra": "^8.1.0",
     "glob-promise": "^3.4.0",
     "install-self": "dword-design/install-self#fork",
-    "mocha": "^6.2.1",
+    "mocha": "^6.2.2",
     "nyc": "^14.1.1",
-    "output-files": "^1.0.1",
-    "pipe-fns": "^1.0.1"
+    "output-files": "^1.1.1"
   }
 }

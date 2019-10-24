@@ -1,10 +1,9 @@
 const then = require('@dword-design/functions/then')
-const pipe = require('pipe-fns')
 const expect = require('expect')
 
 describe('then', () => {
 
-  it('works', () => expect(pipe(new Promise(resolve => setTimeout(() => resolve(1), 10)), then(x => x * 2))).resolves.toEqual(2))
+  it('works', () => expect(then(x => x * 2)(new Promise(resolve => setTimeout(() => resolve(1), 10)))).resolves.toEqual(2))
 
-  it('exceptions', () => expect(pipe(Promise.resolve(), then(x => { throw new Error('foo') }))).rejects.toThrow())
+  it('exceptions', () => expect(then(() => { throw new Error('foo') })(Promise.resolve())).rejects.toThrow())
 })
