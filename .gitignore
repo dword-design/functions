@@ -1,5 +1,8 @@
-node_modules
-.nyc_output
-/*.js
 .DS_Store
+.editorconfig
+.nyc_output
+.vscode
 coverage
+dist
+node_modules
+/*.js

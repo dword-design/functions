@@ -1,6 +1,6 @@
 {
   "name": "@dword-design/functions",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "files": [
     "*.js"
   ],
@@ -8,7 +8,7 @@
   "author": "Sebastian Landwehr <info@dword-design.de>",
   "license": "MIT",
   "scripts": {
-    "prepare": "node build/build.cli.js",
+    "prepare": "dw-config-files && node build/build.cli.js",
     "pretest": "npm run prepare && install-self",
     "test": "nyc --reporter lcov --reporter text mocha"
   },
@@ -17,6 +17,7 @@
     "tinycolor2": "^1.4.1"
   },
   "devDependencies": {
+    "@dword-design/config-files": "^1.0.3",
     "expect": "^24.9.0",
     "fs-extra": "^8.1.0",
     "glob-promise": "^3.4.0",

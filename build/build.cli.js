@@ -4,10 +4,8 @@
   const config = require('./config')
   const mapKeys = require('lodash/mapKeys')
   const mapValues = require('lodash/mapValues')
-  const values = require('lodash/values')
   const outputFiles = require('output-files')
-  const { remove } = require('fs-extra')
-  const endent = require('endent')
+  const { remove, appendFile } = require('fs-extra')
   const glob = require('glob-promise')
 
   await Promise.all((await glob('*.js')).map(filename => remove(filename)))
@@ -22,4 +20,6 @@
       (code, name) => `${name}.js`
     ),
   )
+
+  await appendFile('.gitignore', '/*.js')
 })()

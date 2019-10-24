@@ -89,6 +89,13 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@dword-design/config-files@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@dword-design/config-files/-/config-files-1.0.3.tgz#a4d541b0c19eb2eb22ba635a3a262c5f7fb0ae83"
+  integrity sha512-OR0AL2xSYupFLfYcfHpQA0LcLkKwGtbBEzCkA5rkVFsmkIFC/SkXA+bA9KuBfaNyjClvlrbXgd07wxHqbVDHMA==
+  dependencies:
+    fs-extra "^8.1.0"
+
 "@jest/console@^24.9.0":
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-24.9.0.tgz#79b1bc06fb74a8cfb01cbdedf945584b1b9707f0"
