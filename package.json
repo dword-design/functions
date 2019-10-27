@@ -1,10 +1,13 @@
 {
   "name": "@dword-design/functions",
-  "version": "0.7.9",
+  "version": "0.7.10",
   "repository": "https://github.com/dword-design/functions",
   "author": "Sebastian Landwehr <info@dword-design.de>",
   "license": "MIT",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prepare": "dw-config-files && node build/build.cli.js",
     "pretest": "npm run prepare && install-self",
