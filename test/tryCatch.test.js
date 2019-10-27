@@ -1,4 +1,4 @@
-const tryCatch = require('@dword-design/functions/tryCatch')
+const tryCatch = require('@dword-design/functions/dist/tryCatch')
 const expect = require('expect')
 
 describe('tryCatch', () => {

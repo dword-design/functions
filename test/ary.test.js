@@ -1,4 +1,4 @@
-const ary = require('@dword-design/functions/ary')
+const ary = require('@dword-design/functions/dist/ary')
 const expect = require('expect')
 
 describe('ary', () => {

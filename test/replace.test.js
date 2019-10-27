@@ -1,4 +1,4 @@
-const replace = require('@dword-design/functions/replace')
+const replace = require('@dword-design/functions/dist/replace')
 const expect = require('expect')
 
 describe('replace', () => {

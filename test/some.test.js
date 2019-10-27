@@ -1,4 +1,4 @@
-const some = require('@dword-design/functions/some')
+const some = require('@dword-design/functions/dist/some')
 const expect = require('expect')
 
 describe('some', () => {

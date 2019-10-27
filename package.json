@@ -1,12 +1,10 @@
 {
   "name": "@dword-design/functions",
-  "version": "0.7.8",
-  "files": [
-    "*.js"
-  ],
+  "version": "0.7.9",
   "repository": "https://github.com/dword-design/functions",
   "author": "Sebastian Landwehr <info@dword-design.de>",
   "license": "MIT",
+  "main": "dist/index.js",
   "scripts": {
     "prepare": "dw-config-files && node build/build.cli.js",
     "pretest": "npm run prepare && install-self",
@@ -26,7 +24,6 @@
     "@dword-design/config-files": "^1.0.3",
     "expect": "^24.9.0",
     "fs-extra": "^8.1.0",
-    "glob-promise": "^3.4.0",
     "husky": "^3.0.9",
     "install-self": "dword-design/install-self#fork",
     "mocha": "^6.2.2",

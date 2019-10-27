@@ -1,4 +1,4 @@
-const omitBy = require('@dword-design/functions/omitBy')
+const omitBy = require('@dword-design/functions/dist/omitBy')
 const expect = require('expect')
 
 describe('omitBy', () => {

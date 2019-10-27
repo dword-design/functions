@@ -1,4 +1,4 @@
-const endsWith = require('@dword-design/functions/endsWith')
+const endsWith = require('@dword-design/functions/dist/endsWith')
 const expect = require('expect')
 
 describe('endsWith', () => {

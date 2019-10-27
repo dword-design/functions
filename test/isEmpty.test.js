@@ -1,4 +1,4 @@
-const isEmpty = require('@dword-design/functions/isEmpty')
+const isEmpty = require('@dword-design/functions/dist/isEmpty')
 const expect = require('expect')
 
 describe('isEmpty', () => {

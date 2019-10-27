@@ -1,25 +1,14 @@
 #!/usr/bin/env node
 
 (async () => {
-  const config = require('./config')
-  const mapKeys = require('lodash/mapKeys')
-  const mapValues = require('lodash/mapValues')
-  const outputFiles = require('output-files')
-  const { remove, appendFile } = require('fs-extra')
-  const glob = require('glob-promise')
+  const config = require('../config')
+  const { remove, appendFile, outputFile } = require('fs-extra')
+  const P = require('path')
 
-  await Promise.all((await glob('*.js')).map(filename => remove(filename)))
+  await remove('dist')
 
-  await outputFiles(
-    '.',
-    mapKeys(
-      mapValues(
-        config,
-        code => `module.exports = ${code}`
-      ),
-      (code, name) => `${name}.js`
-    ),
-  )
+  await Promise.all(Object.keys(config).map(name => outputFile(P.join('dist', `${name}.js`), `module.exports = ${config[name]}`)))
+  await outputFile(P.join('dist', 'index.js'), Object.keys(config).map(name => `exports.${name} = require('./${name}')`).join('\n'))
 
   await appendFile('.gitignore', '/*.js')
 })()

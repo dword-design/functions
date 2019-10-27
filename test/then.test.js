@@ -1,4 +1,4 @@
-const then = require('@dword-design/functions/then')
+const then = require('@dword-design/functions/dist/then')
 const expect = require('expect')
 
 describe('then', () => {

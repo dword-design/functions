@@ -1,4 +1,4 @@
-const otherwise = require('@dword-design/functions/otherwise')
+const otherwise = require('@dword-design/functions/dist/otherwise')
 const expect = require('expect')
 
 describe('otherwise', () => {

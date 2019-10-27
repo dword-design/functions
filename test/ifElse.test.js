@@ -1,4 +1,4 @@
-const ifElse = require('@dword-design/functions/ifElse')
+const ifElse = require('@dword-design/functions/dist/ifElse')
 const expect = require('expect')
 
 describe('ifElse', () => {
