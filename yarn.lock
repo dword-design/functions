@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@dword-design/config-files@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@dword-design/config-files/-/config-files-1.0.3.tgz#a4d541b0c19eb2eb22ba635a3a262c5f7fb0ae83"
-  integrity sha512-OR0AL2xSYupFLfYcfHpQA0LcLkKwGtbBEzCkA5rkVFsmkIFC/SkXA+bA9KuBfaNyjClvlrbXgd07wxHqbVDHMA==
+"@dword-design/config-files@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@dword-design/config-files/-/config-files-1.0.5.tgz#7a9637333475267f6c14b4036e1263baa133f7f2"
+  integrity sha512-sKYoAq7+xqsQqQWQMbzWVRYK6T4JOPDbILf2vjB5rDDfRFanwSVYl/xgPpOIwmgSZENFGPrMTsEklXeJrn0v6w==
   dependencies:
     fs-extra "^8.1.0"
 
