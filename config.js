@@ -22,6 +22,7 @@ module.exports = {
     'max',
     'parseInt',
     'times',
+    'stubArray',
     'stubObject',
     'join',
     'sum',
