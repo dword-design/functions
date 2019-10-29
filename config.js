@@ -2,6 +2,7 @@ const endent = require('endent')
 
 module.exports = {
   ...[
+    'chunk',
     'replace',
     'endsWith',
     'some',
