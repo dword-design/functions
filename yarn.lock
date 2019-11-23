@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@dword-design/config-files@^1.0.5":
+"@dword-design/config-files@1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@dword-design/config-files/-/config-files-1.0.5.tgz#7a9637333475267f6c14b4036e1263baa133f7f2"
   integrity sha512-sKYoAq7+xqsQqQWQMbzWVRYK6T4JOPDbILf2vjB5rDDfRFanwSVYl/xgPpOIwmgSZENFGPrMTsEklXeJrn0v6w==

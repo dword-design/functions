@@ -17,6 +17,6 @@
     "tinycolor2": "^1.4.1"
   },
   "devDependencies": {
-    "@dword-design/config-files": "^1.0.5"
+    "@dword-design/config-files": "1.0.5"
   }
 }
