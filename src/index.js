@@ -58,6 +58,7 @@ export default {
     'invoke',
     'isEmpty',
     'property',
+    'includes',
   ].reduce((acc, current) => ({ ...acc, ...{ [current]: `require('${lodash}/fp/${current}')` } }), {}),
 
   map: `require('${lodash}/fp/map').convert({ cap: false })`,
