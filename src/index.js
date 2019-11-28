@@ -20,7 +20,6 @@ export default {
     'values',
     'flatten',
     'sortBy',
-    'range',
     'groupBy',
     'overEvery',
     'keys',
@@ -88,6 +87,7 @@ export default {
   }`,
   promiseAll: 'promises => Promise.all(promises)',
   ary: `require('${lodash}/ary')`,
+  range: `require('${lodash}/range')`,
   nullary: 'func => () => func()',
   filterAsync: endent`
     callback => async collection => {
