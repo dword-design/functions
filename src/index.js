@@ -1,6 +1,10 @@
-const endent = require('endent')
+import endent from 'endent'
+import getPackageName from 'get-package-name'
 
-module.exports = {
+const lodash = getPackageName(require.resolve('lodash'))
+const tinycolor2 = getPackageName(require.resolve('tinycolor2'))
+
+export default {
   ...[
     'chunk',
     'replace',
@@ -54,18 +58,18 @@ module.exports = {
     'invoke',
     'isEmpty',
     'property',
-  ].reduce((acc, current) => ({ ...acc, ...{ [current]: `require('lodash/fp/${current}')` } }), {}),
+  ].reduce((acc, current) => ({ ...acc, ...{ [current]: `require('${lodash}/fp/${current}')` } }), {}),
 
-  map: "require('lodash/fp/map').convert({ cap: false })",
-  mapValues: "require('lodash/fp/mapValues').convert({ cap: false })",
-  flatMap: "require('lodash/fp/flatMap').convert({ cap: false })",
-  find: "require('lodash/fp/find').convert({ cap: false })",
-  findIndex: "require('lodash/fp/findIndex').convert({ cap: false })",
-  findKey: "require('lodash/fp/findKey').convert({ cap: false })",
-  forIn: "require('lodash/fp/forIn').convert({ cap: false })",
-  mapKeys: "require('lodash/fp/mapKeys').convert({ cap: false })",
-  divide: "require('lodash/fp/divide').convert({ rearg: true })",
-  filter: "require('lodash/fp/filter').convert({ cap: false })",
+  map: `require('${lodash}/fp/map').convert({ cap: false })`,
+  mapValues: `require('${lodash}/fp/mapValues').convert({ cap: false })`,
+  flatMap: `require('${lodash}/fp/flatMap').convert({ cap: false })`,
+  find: `require('${lodash}/fp/find').convert({ cap: false })`,
+  findIndex: `require('${lodash}/fp/findIndex').convert({ cap: false })`,
+  findKey: `require('${lodash}/fp/findKey').convert({ cap: false })`,
+  forIn: `require('${lodash}/fp/forIn').convert({ cap: false })`,
+  mapKeys: `require('${lodash}/fp/mapKeys').convert({ cap: false })`,
+  divide: `require('${lodash}/fp/divide').convert({ rearg: true })`,
+  filter: `require('${lodash}/fp/filter').convert({ cap: false })`,
   abs: 'Math.abs',
   slice: '(...args) => array => array.slice(...args)',
   first: 'array => array.length > 0 ? array[0] : undefined',
@@ -82,8 +86,8 @@ module.exports = {
     }
   }`,
   promiseAll: 'promises => Promise.all(promises)',
-  ary: "require('lodash/ary')",
-  nullary: "func => () => func()",
+  ary: `require('${lodash}/ary')`,
+  nullary: 'func => () => func()',
   filterAsync: endent`
     callback => async collection => {
       const filterResults = await Promise.all(collection.map(callback))
@@ -98,8 +102,8 @@ module.exports = {
       : localStorage.removeItem(name)
     `,
 
-  rgba: "(color, alpha) => require('tinycolor2')(color).setAlpha(alpha !== undefined ? alpha : 1).toString()",
-  darken: "(color, amount) => require('tinycolor2')(color).darken(amount).toString()",
+  rgba: `(color, alpha) => require('${tinycolor2}')(color).setAlpha(alpha !== undefined ? alpha : 1).toString()`,
+  darken: `(color, amount) => require('${tinycolor2}')(color).darken(amount).toString()`,
 
-  endent: "require('endent')",
+  endent: 'require(\'endent\')',
 }
