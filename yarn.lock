@@ -3185,6 +3185,11 @@ mocha@^6.2.2:
     yargs-parser "13.1.1"
     yargs-unparser "1.6.0"
 
+mock-stdio@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/mock-stdio/-/mock-stdio-1.0.3.tgz#89e32bae44a8c1a92adfe5707d1cbc16c9520c33"
+  integrity sha1-ieMrrkSowakq3+VwfRy8FslSDDM=
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"

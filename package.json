@@ -21,7 +21,8 @@
   "devDependencies": {
     "@dword-design/base-generate-files": "^1.0.1",
     "expect": "^24.9.0",
-    "get-package-name": "^1.0.0"
+    "get-package-name": "^1.0.0",
+    "mock-stdio": "^1.0.3"
   },
   "maintainers": [],
   "contributors": [
