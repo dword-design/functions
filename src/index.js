@@ -53,6 +53,7 @@ export default {
     'compact',
     'unary',
     'invoke',
+    'invokeArgs',
     'isEmpty',
     'property',
     'includes',
