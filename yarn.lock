@@ -749,9 +749,9 @@
     babel-plugin-transform-imports "^2.0.0"
 
 "@dword-design/base-generate-files@^1.0.1":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@dword-design/base-generate-files/-/base-generate-files-1.0.2.tgz#315528f10766a56294c1959e0035ef65fb707b5d"
-  integrity sha512-kkKrpk0VagrhUAFx+rGxcxyrHwgTDtUy2T7Rhv9QiN2Vho/rJH7wuTxK0xYE00cAdNm1KxYylZj/xKXYEHeVJg==
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@dword-design/base-generate-files/-/base-generate-files-1.0.3.tgz#8e2c925abf066866ac734e86ab9d5d5a4ac8072d"
+  integrity sha512-sPHRHp/3PrdPAIUWxpVQQ5aT86c6wbPfW6jygAgcvEVfDZnRdPlBPLK46GFj9QBzWfvPK8vGNi0KmxRh8Y9FQQ==
   dependencies:
     "@babel/register" "^7.7.4"
     "@dword-design/base" "^1.5.5"
