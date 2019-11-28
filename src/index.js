@@ -84,7 +84,7 @@ export default {
     }
   }`,
   promiseAll: 'promises => Promise.all(promises)',
-  parseInt: 'base => str => parseInt(str, base)',
+  parseInt: 'param => typeof param === \'string\' ? parseInt(param) : (str => parseInt(str, param))',
   ary: `require('${lodash}/ary')`,
   range: `require('${lodash}/range')`,
   times: `require('${lodash}/times')`,
