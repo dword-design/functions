@@ -24,8 +24,6 @@ export default {
     'overEvery',
     'keys',
     'max',
-    'parseInt',
-    'times',
     'stubArray',
     'stubObject',
     'join',
@@ -86,8 +84,10 @@ export default {
     }
   }`,
   promiseAll: 'promises => Promise.all(promises)',
+  parseInt: 'base => str => parseInt(str, base)',
   ary: `require('${lodash}/ary')`,
   range: `require('${lodash}/range')`,
+  times: `require('${lodash}/times')`,
   nullary: 'func => () => func()',
   filterAsync: endent`
     callback => async collection => {
