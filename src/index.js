@@ -8,6 +8,7 @@ export default {
   ...[
     'chunk',
     'replace',
+    'startsWith',
     'endsWith',
     'some',
     'keyBy',
@@ -60,6 +61,7 @@ export default {
     'pull',
     'pullAll',
     'pullAt',
+    'remove',
   ].reduce((acc, current) => ({ ...acc, ...{ [current]: `require('${lodash}/fp/${current}')` } }), {}),
 
   map: `require('${lodash}/fp/map').convert({ cap: false })`,
