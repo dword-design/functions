@@ -1,3 +1,3 @@
-import merge from 'lodash/fp/merge'
+import merge from 'lodash/merge'
 
-export default merge
+export default (...others) => source => merge(source, ...others)
