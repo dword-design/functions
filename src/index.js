@@ -86,6 +86,7 @@ import setLocalStorageItem from './setLocalStorageItem'
 import rgba from './rgba'
 import darken from './darken'
 import endent from './endent'
+import jsonToString from './jsonToString'
 
 export {
   chunk,
@@ -176,4 +177,5 @@ export {
   rgba,
   darken,
   endent,
+  jsonToString,
 }
