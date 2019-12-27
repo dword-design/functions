@@ -761,9 +761,9 @@
     safe-require "^1.0.3"
 
 "@dword-design/base-config-node@^1.0.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@dword-design/base-config-node/-/base-config-node-1.4.0.tgz#7e221ba44a27569e589695908aa9e3a34ee7131d"
-  integrity sha512-cNy4fE99TB4WwCuuX1Ap0MCORYc2ufEABwYcHmHILvpypoDwNQXs/vdP+9UOt3ipW0UEtsBXfxVPO/ej4zIplg==
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@dword-design/base-config-node/-/base-config-node-1.4.1.tgz#1bba83cdebbeba1099661c1bbc8a55a2db300223"
+  integrity sha512-Pfmx+0+pjKRL+6pjTQ2Dpq5b98vD3aO7CGljvKV3ZSnZok6+T/gTeGFFOoCqFa4K3ef4ZFCB9fIDE02/cHCwaw==
   dependencies:
     "@babel/cli" "^7.7.5"
     "@babel/core" "^7.7.5"
@@ -780,9 +780,9 @@
     get-package-name "^1.0.0"
 
 "@dword-design/base@^3.4.4", "@dword-design/base@^3.5.0":
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-3.10.0.tgz#41d2d01c4b79ef614972c7c9cf875d7c02fec99c"
-  integrity sha512-FHTPpImjtY2C0efZnFx9508T7rBYfmUv7aNBaoWxTJvM8dt123lLQIR1oBlPOsZs1qUWa3EIt7o1rW9PjWdoRA==
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-3.10.1.tgz#b6df0583f989778088fd4a2d99944e6e7075af09"
+  integrity sha512-Dl1/SFsUD21AltLh121j28Ctqnoa051eM59fuIKTHMuamZeqgDcoEzQe7NXBQgx9RbaYM0aRKDPa/nOevb/KVA==
   dependencies:
     "@babel/cli" "^7.6.4"
     "@babel/core" "^7.6.4"
@@ -820,17 +820,17 @@
     depcheck dword-design/depcheck#fork
 
 "@dword-design/depcheck-spawn-detector@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@dword-design/depcheck-spawn-detector/-/depcheck-spawn-detector-1.0.0.tgz#667f8e1bfe8002beae262c2e163e80c17884b2ad"
-  integrity sha512-6ubR6Lya/fYQ9eE4ad0p2ua6e+HCedis+Wb5DjLnALFgJCd+tnJWFIIVe8j2yFVEanRn2wJs+MKTQzEiHB+gJQ==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@dword-design/depcheck-spawn-detector/-/depcheck-spawn-detector-1.0.1.tgz#c323a64996f7de3f9054ed2c0929849060654a77"
+  integrity sha512-jldWFkl5Y5Y7rR4xxs+gR3hLyzAF2RDYBxTUJloYqe3C0Q5nHNCna9NcNo5kfi0IgLlHwgXQmjubUQBUNRfk2w==
   dependencies:
     "@dword-design/functions" "^2.2.4"
     resolve-from "^5.0.0"
 
 "@dword-design/depgraph-client@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@dword-design/depgraph-client/-/depgraph-client-1.0.0.tgz#8265590d9f13d55c32b41cbf737d0871fa513057"
-  integrity sha512-1XN3WlbEI0DuI3pUUrPBP9+vK8+dSF9Cmui4IGGIh+eFfHcLRF7hcIi4WLyNxGaSBMYyg6Ivff6WbELuQnVY0w==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@dword-design/depgraph-client/-/depgraph-client-1.0.1.tgz#50957753c8fe1e960f95fa0eaae1b59ee192819b"
+  integrity sha512-0IQehkmsJBAodYVEuySf7jWJ1SNSxhpYAqoTs9Mnz8tSwEsxeejvuX6uOlYS24EWwLAJwPR/PXEIh+SVd7WLhw==
   dependencies:
     "@dword-design/base" "^3.5.0"
     "@dword-design/functions" "^2.2.4"
@@ -845,9 +845,9 @@
     webcola "^3.4.0"
 
 "@dword-design/depgraph@^1.0.0":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@dword-design/depgraph/-/depgraph-1.0.1.tgz#4b8811e3f03b3a9ca0a548e138d548036c480870"
-  integrity sha512-nfwSJvkqSIpKdM3YEJONEmiNZRgPDlJxZ7SctgLbs10KXqhXaJRzDgjNhwcp4/N79aa/MPGiHhMSVWLFnR4WMg==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@dword-design/depgraph/-/depgraph-1.0.2.tgz#5d9890d3a358d94a01a858403fe88fd8285a1c4f"
+  integrity sha512-Yde1hdzICBZduUnmYjs+YOnFSIUDLhC1enYm2YeT/kSqskZaOGNeWPROL0/Ye+7D2aGZyKk3F4E+3G0O7ISgNg==
   dependencies:
     "@dword-design/depgraph-client" "^1.0.0"
     "@dword-design/functions" "^2.2.4"
@@ -871,9 +871,9 @@
     get-package-name "^1.0.0"
 
 "@dword-design/functions@^2.2.2", "@dword-design/functions@^2.2.4":
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/@dword-design/functions/-/functions-2.2.4.tgz#c6f12f9313433226183e8741d17bf18edd67ef8f"
-  integrity sha512-EOBaoFroyJ59QZ+Oh111SuTWltTnqMsTCDoRyzZtbYn6tFBqeR6p760KukkdO7oapaazaJZLm/B45f7q2XW1Zg==
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@dword-design/functions/-/functions-2.3.0.tgz#9f2b3a4cad51810baece1bfd32739a38fe479cbc"
+  integrity sha512-5KvpQsx1X0bSiew0qDNACsnGGv1jcwfdPtckQc44RqPcSCfZH9+XBjcJLA9e9jRoxTtd9NiPOYd0rcCAq86Ccw==
   dependencies:
     endent "^1.3.0"
     lodash "^4.17.15"
@@ -909,9 +909,9 @@
     reset-css "^4.0.1"
 
 "@dword-design/resolver-test@^1.0.0":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@dword-design/resolver-test/-/resolver-test-1.0.6.tgz#671cd60d23d547bfb0c9828c71c2e32959f64d28"
-  integrity sha512-BUTdKkuCq6GeQyAftlK1R1NynqvSszDCjtE7EvFdMHuXEPUUor+nqr/yl/Mf3w/CadFuIkZ2kOZmgKNypr4GLg==
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@dword-design/resolver-test/-/resolver-test-1.0.7.tgz#60d4b329bb342a3b7346a193dbb448a73d56138d"
+  integrity sha512-p8HmMFvWesoLDIUkxeuzZMbxaqAp31Nfep0kKCcRBnUCRqVmquB8HmjnLJWFFpeR6LAHaJ7IBdwrVYrWjEfQUQ==
   dependencies:
     "@dword-design/functions" "^2.2.4"
     read-all-up "^1.0.1"
@@ -919,9 +919,9 @@
     require-package-name "^2.0.1"
 
 "@dword-design/vue-component@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@dword-design/vue-component/-/vue-component-1.0.0.tgz#8f3735b194d559c60b7e13b4814afba22c309780"
-  integrity sha512-slTFcxLdkRqixgGQO8vuRKvyEhFLS4DNulUt0gQ3yrPHudfmrLrjrOi18cF47CSg6UBfDw/3/ZVCjZjarZ0+Lw==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@dword-design/vue-component/-/vue-component-1.0.1.tgz#86689b3a6d7d3bd317bb6897238f1fa7fab8f3a5"
+  integrity sha512-9aox3dRo6g07ccU1IJGq7CedGz3HqlhNeve4B3hKx0z+/dXBhVvn3ztadnxdieInLfJCm33mz4hWnyHT1y2aeA==
   dependencies:
     "@dword-design/functions" "^2.2.4"
     switch-fn "^1.0.2"
