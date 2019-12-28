@@ -68,6 +68,7 @@ import abs from './abs'
 import slice from './slice'
 import first from './first'
 import drop from './drop'
+import dropRight from './drop-right'
 import split from './split'
 import consoleLog from './console-log'
 import then from './then'
@@ -88,6 +89,8 @@ import darken from './darken'
 import endent from './endent'
 import jsonToString from './json-to-string'
 import add from './add'
+import min from './min'
+import trim from './trim'
 
 export {
   chunk,
@@ -160,6 +163,7 @@ export {
   slice,
   first,
   drop,
+  dropRight,
   split,
   consoleLog,
   then,
@@ -180,4 +184,6 @@ export {
   endent,
   jsonToString,
   add,
+  min,
+  trim,
 }

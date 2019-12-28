@@ -17,8 +17,8 @@
     "test": "base test"
   },
   "dependencies": {
-    "endent": "^1.3.0",
     "lodash": "^4.17.15",
+    "resolve-tagged-template": "^1.0.1",
     "tinycolor2": "^1.4.1"
   },
   "devDependencies": {

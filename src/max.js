@@ -1,3 +1,3 @@
-import max from 'lodash/fp/max'
+import max from 'lodash/max'
 
 export default max
