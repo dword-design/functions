@@ -87,6 +87,7 @@ import rgba from './rgba'
 import darken from './darken'
 import endent from './endent'
 import jsonToString from './json-to-string'
+import add from './add'
 
 export {
   chunk,
@@ -178,4 +179,5 @@ export {
   darken,
   endent,
   jsonToString,
+  add,
 }
