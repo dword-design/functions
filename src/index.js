@@ -91,6 +91,7 @@ import jsonToString from './json-to-string'
 import add from './add'
 import min from './min'
 import trim from './trim'
+import trimChars from './trim-chars'
 
 export {
   chunk,
@@ -186,4 +187,5 @@ export {
   add,
   min,
   trim,
+  trimChars,
 }
