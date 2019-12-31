@@ -1,9 +1,7 @@
 {
   "name": "@dword-design/functions",
   "version": "2.6.0",
-  "bugs": {
-    "url": "https://github.com/dword-design/functions/issues"
-  },
+  "description": "",
   "repository": "dword-design/functions",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@dword-design.de>",
@@ -25,10 +23,5 @@
     "@dword-design/base": "^4.0.0",
     "expect": "^24.9.0",
     "mock-stdio": "^1.0.3"
-  },
-  "contributors": [
-    "Renovate Bot (http://renovatebot.com)",
-    "dword-design (http://www.dword-design.de)"
-  ],
-  "maintainers": []
+  }
 }
