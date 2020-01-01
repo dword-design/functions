@@ -1,9 +1,7 @@
 {
   "name": "@dword-design/functions",
-  "version": "2.6.0",
-  "bugs": {
-    "url": "https://github.com/dword-design/functions/issues"
-  },
+  "version": "2.6.1",
+  "description": "",
   "repository": "dword-design/functions",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@dword-design.de>",
@@ -17,18 +15,13 @@
     "test": "base test"
   },
   "dependencies": {
+    "endent": "dword-design/endent#fork",
     "lodash": "^4.17.15",
-    "resolve-tagged-template": "^1.0.1",
     "tinycolor2": "^1.4.1"
   },
   "devDependencies": {
-    "@dword-design/base": "^3.4.4",
+    "@dword-design/base": "^4.0.0",
     "expect": "^24.9.0",
     "mock-stdio": "^1.0.3"
-  },
-  "contributors": [
-    "Renovate Bot (http://renovatebot.com)",
-    "dword-design (http://www.dword-design.de)"
-  ],
-  "maintainers": []
+  }
 }
