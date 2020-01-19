@@ -92,6 +92,7 @@ import add from './add'
 import min from './min'
 import trim from './trim'
 import trimChars from './trim-chars'
+import indexOf from './index-of'
 
 export {
   chunk,
@@ -188,4 +189,5 @@ export {
   min,
   trim,
   trimChars,
+  indexOf,
 }
