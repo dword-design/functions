@@ -20,7 +20,7 @@
     "tinycolor2": "^1.4.1"
   },
   "devDependencies": {
-    "@dword-design/base": "^4.0.0",
+    "@dword-design/base": "^5.0.0",
     "@dword-design/base-config-vue-app": "^1.0.5",
     "child-process-promise": "^2.2.1",
     "expect": "^24.9.0",
