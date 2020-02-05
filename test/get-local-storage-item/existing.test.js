@@ -33,7 +33,7 @@ export default () => withLocalTmpDir(__dirname, async () => {
     `,
   })
 
-  await spawn('base', ['build'])
+  await spawn('base', ['prepublishOnly'])
 
   const port = await portfinder.getPortPromise()
   const app = express().use(express.static(P.resolve('dist'))).listen(port)
