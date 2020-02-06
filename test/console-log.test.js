@@ -1,5 +1,4 @@
 import { consoleLog } from '@dword-design/functions'
-import expect from 'expect'
 import mockStdio from 'mock-stdio'
 
 export default () => {

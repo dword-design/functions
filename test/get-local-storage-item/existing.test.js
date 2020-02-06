@@ -1,5 +1,4 @@
 import { endent } from '@dword-design/functions'
-import expect from 'expect'
 import outputFiles from 'output-files'
 import withLocalTmpDir from 'with-local-tmp-dir'
 import portfinder from 'portfinder'

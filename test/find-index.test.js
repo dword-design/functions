@@ -1,5 +1,4 @@
 import { findIndex } from '@dword-design/functions'
-import expect from 'expect'
 
 export default () => {
   const array = [{ foo: 1, bar: 2 }, { foo: 2, bar: 3 }]
