@@ -1,5 +1,4 @@
 import { map } from '@dword-design/functions'
-import expect from 'expect'
 
 export default () => {
   expect([1, 2, 3] |> map(value => value * 2)).toEqual([2, 4, 6])

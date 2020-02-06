@@ -1,5 +1,4 @@
 import { cloneDeep } from '@dword-design/functions'
-import expect from 'expect'
 
 export default () => {
   const array = [1, 2, 3]
