@@ -4,7 +4,7 @@ import withLocalTmpDir from 'with-local-tmp-dir'
 import puppeteer from '@dword-design/puppeteer'
 import getPackageName from 'get-package-name'
 import execa from 'execa'
-import kill from 'tree-kill'
+import kill from 'tree-kill-promise'
 import portReady from 'port-ready'
 
 export default {
@@ -48,6 +48,6 @@ export default {
     await page.goto('http://localhost:3000')
     expect(await page.content()).toMatch('<div>bar</div>')
     await browser.close()
-    kill(childProcess.pid)
+    await kill(childProcess.pid)
   }),
 }

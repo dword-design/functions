@@ -4,7 +4,7 @@ import withLocalTmpDir from 'with-local-tmp-dir'
 import puppeteer from '@dword-design/puppeteer'
 import getPackageName from 'get-package-name'
 import execa from 'execa'
-import kill from 'tree-kill'
+import kill from 'tree-kill-promise'
 import portReady from 'port-ready'
 
 export default {
@@ -46,7 +46,7 @@ export default {
     await page.goto('http://localhost:3000')
     expect(await page.content()).toMatch('<div>bar</div>')
     await browser.close()
-    kill(childProcess.pid)
+    await kill(childProcess.pid)
   }),
   'non-existing': () => withLocalTmpDir(async () => {
     await outputFiles({
@@ -60,13 +60,13 @@ export default {
       `,
       'src/pages/index.js': endent`
         import getLocalStorageItem from '../../../src/get-local-storage-item'
-    
+
         export default {
           render: () => <div>{ process.browser && getLocalStorageItem('foo') === undefined ? 'undefined' : '' }</div>,
         }
       `,
     })
-  
+
     await execa.command('base prepare')
     await execa.command('base prepublishOnly')
     const childProcess = execa.command('base start')
@@ -76,6 +76,6 @@ export default {
     await page.goto('http://localhost:3000')
     expect(await page.content()).toMatch('<div>undefined</div>')
     await browser.close()
-    kill(childProcess.pid)
+    await kill(childProcess.pid)
   }),
 }
