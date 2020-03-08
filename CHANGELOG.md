@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/dword-design/functions/compare/v1.0.0...v1.1.0) (2020-03-08)
+
+
+### Features
+
+* add call function ([ff2b11d](https://github.com/dword-design/functions/commit/ff2b11d96dd222fc73edb05fbab5e72bdbfeeeb8))
+
 # 1.0.0 (2020-02-22)
 
 
