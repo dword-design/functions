@@ -93,6 +93,7 @@ import min from './min'
 import trim from './trim'
 import trimChars from './trim-chars'
 import indexOf from './index-of'
+import call from './call'
 
 export {
   chunk,
@@ -190,4 +191,5 @@ export {
   trim,
   trimChars,
   indexOf,
+  call,
 }
