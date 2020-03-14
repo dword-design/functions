@@ -34,5 +34,8 @@
     "port-ready": "^0.1.0",
     "tree-kill-promise": "^1.0.0",
     "with-local-tmp-dir": "^2.2.5"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
