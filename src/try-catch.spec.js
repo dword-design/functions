@@ -1,9 +1,26 @@
 import tryCatch from './try-catch'
+import identity from './identity'
 
 export default {
-  valid: async () => {
-    let result = 1
-    await (Promise.resolve(2) |> tryCatch(() => { throw new Error('foo') }, () => result = 2))
-    expect(result).toEqual(2)
-  },
+  'no error': () => expect(1 |> tryCatch(identity, () => 2)).toEqual(1),
+  error: () =>
+    expect(1 |> tryCatch(() => { throw new Error('foo') }, ({ message }) => message)).toEqual('foo'),
+  'async success': async () => expect(
+    1
+      |> tryCatch(
+        () => new Promise(resolve => setTimeout(() => resolve('foo'), 100)),
+        identity,
+      )
+      |> await,
+  )
+    .toEqual('foo'),
+  'async error': async () => expect(
+    1
+      |> tryCatch(
+        () => new Promise((resolve, reject) => setTimeout(() => reject('foo'), 100)),
+        identity,
+      )
+      |> await,
+  )
+    .toEqual('foo'),
 }

@@ -1,7 +1,14 @@
-export default (tryer, catcher) => (...args) => {
+import pIsPromise from 'p-is-promise'
+import identity from './identity'
+
+export default (tryer, catcher = identity) => (...args) => {
   try {
-    return tryer(...args)
+    const result = tryer(...args)
+    if (result |> pIsPromise) {
+      return result.catch(error => catcher(error, ...args))
+    }
+    return result
   } catch (error) {
-    return (catcher || (x => x))(error, ...args)
+    return catcher(error, ...args)
   }
 }
