@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/dword-design/functions/compare/v1.1.0...v1.1.1) (2020-03-14)
+
+
+### Bug Fixes
+
+* fix tryCatch for promises ([ac71fdf](https://github.com/dword-design/functions/commit/ac71fdf19af9a17f2df0324b185437d2bc46d2cf))
+* upgrades ([1d0f915](https://github.com/dword-design/functions/commit/1d0f91546cde07ba070f3b4e47862afb7b0ce8da))
+
 # [1.1.0](https://github.com/dword-design/functions/compare/v1.0.0...v1.1.0) (2020-03-08)
 
 
