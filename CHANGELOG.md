@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/dword-design/functions/compare/v1.1.1...v1.1.2) (2020-05-17)
+
+
+### Bug Fixes
+
+* upgrades ([103f10d](https://github.com/dword-design/functions/commit/103f10d2d0de409392f3f7da32b73245a8870baf))
+
 ## [1.1.1](https://github.com/dword-design/functions/compare/v1.1.0...v1.1.1) (2020-03-14)
 
 
