@@ -1,81 +1,79 @@
-import endent from './endent'
 import outputFiles from 'output-files'
 import withLocalTmpDir from 'with-local-tmp-dir'
 import puppeteer from '@dword-design/puppeteer'
-import getPackageName from 'get-package-name'
-import execa from 'execa'
-import kill from 'tree-kill-promise'
-import portReady from 'port-ready'
+import { Nuxt, Builder } from 'nuxt'
+import mapValues from './map-values'
+import endent from './endent'
+
+let browser
+let page
+
+const runTest = ({ files = {}, test }) => () =>
+  withLocalTmpDir(async () => {
+    await outputFiles(files)
+    const nuxt = new Nuxt({ dev: false })
+    await new Builder(nuxt).build()
+    await nuxt.listen()
+    await test()
+    await nuxt.close()
+  })
 
 export default {
-  existing: () => withLocalTmpDir(async () => {
-    await outputFiles({
-      'package.json': endent`
-        {
-          "baseConfig": "nuxt",
-          "dependencies": {
-            "${getPackageName(require.resolve('@dword-design/base-config-nuxt'))}": "^1.0.0"
-          }
-        }
-      `,
-      src: {
-        'index.js': endent`
-          export default {
-            plugins: [
-              { src: require.resolve('./plugins/setup'), mode: 'client' },
-            ],
-          }
-        `,
-        'pages/index.js': endent`
-          import getLocalStorageItem from '../../../src/get-local-storage-item'
+  before: async () => {
+    browser = await puppeteer.launch()
+    page = await browser.newPage()
+  },
+  after: () => browser.close(),
+  afterEach: () => page.evaluate(() => localStorage.clear()),
+  ...({
+    existing: {
+      files: {
+        'pages/index.vue': endent`
+          <template>
+            <div>{{ foo || 'undefined' }}</div>
+          </template>
+
+          <script>
+          import getLocalStorageItem from '../../src/get-local-storage-item'
 
           export default {
-            render: () => <div>{ process.browser ? getLocalStorageItem('foo') : 'undefined' }</div>,
+            computed: {
+              foo: () => process.browser ? getLocalStorageItem('foo') : undefined,
+            },
+            beforeMount: () => localStorage.setItem('foo', 'bar'),
           }
+          </script>
+
         `,
-        'plugins/setup.js': 'localStorage.setItem(\'foo\', \'bar\')',
       },
-    })
+      test: async () => {
+        await page.goto('http://localhost:3000')
+        expect(await page.content()).toMatch('<div>bar</div>')
+      },
+    },
+    'non-existing': {
+      files: {
+        'pages/index.vue': endent`
+          <template>
+            <div>{{ foo || 'undefined' }}</div>
+          </template>
 
-    await execa.command('base prepare')
-    await execa.command('base prepublishOnly')
-    const childProcess = execa.command('base start')
-    await portReady(3000)
-    const browser = await puppeteer.launch()
-    const page = await browser.newPage()
-    await page.goto('http://localhost:3000')
-    expect(await page.content()).toMatch('<div>bar</div>')
-    await browser.close()
-    await kill(childProcess.pid)
-  }),
-  'non-existing': () => withLocalTmpDir(async () => {
-    await outputFiles({
-      'package.json': endent`
-        {
-          "baseConfig": "nuxt",
-          "dependencies": {
-            "${getPackageName(require.resolve('@dword-design/base-config-nuxt'))}": "^1.0.0"
+          <script>
+          import getLocalStorageItem from '../../src/get-local-storage-item'
+
+          export default {
+            computed: {
+              foo: () => process.browser ? getLocalStorageItem('foo') : undefined,
+            },
           }
-        }
-      `,
-      'src/pages/index.js': endent`
-        import getLocalStorageItem from '../../../src/get-local-storage-item'
+          </script>
 
-        export default {
-          render: () => <div>{ process.browser && getLocalStorageItem('foo') === undefined ? 'undefined' : '' }</div>,
-        }
-      `,
-    })
-
-    await execa.command('base prepare')
-    await execa.command('base prepublishOnly')
-    const childProcess = execa.command('base start')
-    await portReady(3000)
-    const browser = await puppeteer.launch()
-    const page = await browser.newPage()
-    await page.goto('http://localhost:3000')
-    expect(await page.content()).toMatch('<div>undefined</div>')
-    await browser.close()
-    await kill(childProcess.pid)
-  }),
+        `,
+      },
+      test: async () => {
+        await page.goto('http://localhost:3000')
+        expect(await page.content()).toMatch('<div>undefined</div>')
+      },
+    },
+  } |> mapValues(runTest)),
 }
