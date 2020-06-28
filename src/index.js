@@ -30,6 +30,7 @@ import isEqual from './is-equal'
 import isUndefined from './is-undefined'
 import negate from './negate'
 import every from './every'
+import stubFalse from './stub-false'
 import stubTrue from './stub-true'
 import pick from './pick'
 import stubString from './stub-string'
@@ -129,6 +130,7 @@ export {
   negate,
   every,
   stubTrue,
+  stubFalse,
   pick,
   stubString,
   xor,
