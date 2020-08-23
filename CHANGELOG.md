@@ -1,3 +1,12 @@
+## [1.1.4](https://github.com/dword-design/functions/compare/v1.1.3...v1.1.4) (2020-08-23)
+
+
+### Bug Fixes
+
+* fix linting issues ([7d5ba43](https://github.com/dword-design/functions/commit/7d5ba43a3dc0614d9f2ea1eb3900fce90148f52e))
+* fix tests ([d7cac50](https://github.com/dword-design/functions/commit/d7cac50f85866a63c5afea8cf5826f054e2d107d))
+* upgrades ([0a49c36](https://github.com/dword-design/functions/commit/0a49c3630ee5595f2a491f37febc421a73bfb027))
+
 ## [1.1.3](https://github.com/dword-design/functions/compare/v1.1.2...v1.1.3) (2020-06-28)
 
 
