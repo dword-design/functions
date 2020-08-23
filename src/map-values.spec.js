@@ -2,8 +2,8 @@ import mapValues from './map-values'
 
 export default {
   valid: () =>
-    expect({ foo: 1, bar: 2 } |> mapValues(value => value * 2)).toEqual({
-      foo: 2,
+    expect({ bar: 2, foo: 1 } |> mapValues(value => value * 2)).toEqual({
       bar: 4,
+      foo: 2,
     }),
 }

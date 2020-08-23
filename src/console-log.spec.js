@@ -1,4 +1,5 @@
 import mockStdio from 'mock-stdio'
+
 import consoleLog from './console-log'
 
 export default {
@@ -6,7 +7,7 @@ export default {
     mockStdio.start()
     const result = 'foo' |> consoleLog |> x => `${x}bar`
     expect(result).toEqual('foobar')
-    const { stdout } = mockStdio.end()
-    expect(stdout).toEqual('foo\n')
+    const output = mockStdio.end()
+    expect(output.stdout).toEqual('foo\n')
   },
 }

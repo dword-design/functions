@@ -1,4 +1,4 @@
 export default name => {
   const item = localStorage.getItem(name)
-  return item !== null ? item : undefined
+  return item === null ? undefined : item
 }

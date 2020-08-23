@@ -1,2 +1,2 @@
-export default ({ replacer, indent } = {}) => object =>
-  JSON.stringify(object, replacer, indent)
+export default (config = {}) => object =>
+  JSON.stringify(object, config.replacer, config.indent)

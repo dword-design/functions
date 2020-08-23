@@ -1,5 +1,5 @@
-import sortBy from './sort-by'
 import identity from './identity'
+import sortBy from './sort-by'
 
 export default {
   array: () =>

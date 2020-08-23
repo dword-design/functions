@@ -1,5 +1,5 @@
 import values from './values'
 
 export default {
-  valid: () => expect({ foo: 1, bar: 2 } |> values).toEqual([1, 2]),
+  valid: () => expect({ bar: 2, foo: 1 } |> values).toEqual([1, 2]),
 }

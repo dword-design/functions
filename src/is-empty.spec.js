@@ -5,6 +5,10 @@ export default {
     expect([] |> isEmpty).toBeTruthy()
     expect([1] |> isEmpty).toBeFalsy()
   },
+  number: () => {
+    expect(0 |> isEmpty).toBeTruthy()
+    expect(1 |> isEmpty).toBeTruthy()
+  },
   object: () => {
     expect({} |> isEmpty).toBeTruthy()
     expect({ foo: 1 } |> isEmpty).toBeFalsy()
@@ -14,8 +18,4 @@ export default {
     expect('foo' |> isEmpty).toBeFalsy()
   },
   undefined: () => expect(undefined |> isEmpty).toBeTruthy(),
-  number: () => {
-    expect(0 |> isEmpty).toBeTruthy()
-    expect(1 |> isEmpty).toBeTruthy()
-  },
 }

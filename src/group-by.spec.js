@@ -4,15 +4,15 @@ export default {
   valid: () =>
     expect(
       [
-        { x: 'foo', bar: 1 },
-        { x: 'foo', bar: 2 },
-        { x: 'bar', bar: 3 },
+        { bar: 1, x: 'foo' },
+        { bar: 2, x: 'foo' },
+        { bar: 3, x: 'bar' },
       ] |> groupBy('x')
     ).toEqual({
+      bar: [{ bar: 3, x: 'bar' }],
       foo: [
-        { x: 'foo', bar: 1 },
-        { x: 'foo', bar: 2 },
+        { bar: 1, x: 'foo' },
+        { bar: 2, x: 'foo' },
       ],
-      bar: [{ x: 'bar', bar: 3 }],
     }),
 }

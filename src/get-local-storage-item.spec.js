@@ -1,30 +1,32 @@
+import puppeteer from '@dword-design/puppeteer'
+import { Builder, Nuxt } from 'nuxt'
 import outputFiles from 'output-files'
 import withLocalTmpDir from 'with-local-tmp-dir'
-import puppeteer from '@dword-design/puppeteer'
-import { Nuxt, Builder } from 'nuxt'
-import mapValues from './map-values'
+
 import endent from './endent'
+import mapValues from './map-values'
 
 let browser
 let page
-
-const runTest = ({ files = {}, test }) => () =>
-  withLocalTmpDir(async () => {
-    await outputFiles(files)
+const runTest = config => () => {
+  config = { files: {}, ...config }
+  return withLocalTmpDir(async () => {
+    await outputFiles(config.files)
     const nuxt = new Nuxt({ dev: false })
     await new Builder(nuxt).build()
     await nuxt.listen()
-    await test()
+    await config.test()
     await nuxt.close()
   })
+}
 
 export default {
+  after: () => browser.close(),
+  afterEach: () => page.evaluate(() => localStorage.clear()),
   before: async () => {
     browser = await puppeteer.launch()
     page = await browser.newPage()
   },
-  after: () => browser.close(),
-  afterEach: () => page.evaluate(() => localStorage.clear()),
   ...({
     existing: {
       files: {

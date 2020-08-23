@@ -7,5 +7,5 @@ export default {
         ['foo', 1],
         ['bar', 2],
       ] |> fromPairs
-    ).toEqual({ foo: 1, bar: 2 }),
+    ).toEqual({ bar: 2, foo: 1 }),
 }

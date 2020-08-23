@@ -1,4 +1,4 @@
 export default (name, value) =>
-  value !== undefined
-    ? localStorage.setItem(name, value)
-    : localStorage.removeItem(name)
+  value === undefined
+    ? localStorage.removeItem(name)
+    : localStorage.setItem(name, value)
