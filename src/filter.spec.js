@@ -6,10 +6,10 @@ export default {
   'object key filter': () =>
     expect(
       { bar: 2, baz: 3, foo: 1 } |> filter((value, key) => key !== 'bar')
-    ).toEqual([1, 3]),
+    ).toEqual([3, 1]),
   'object value filter': () =>
     expect({ bar: 2, baz: 3, foo: 1 } |> filter(value => value !== 2)).toEqual([
-      1,
       3,
+      1,
     ]),
 }

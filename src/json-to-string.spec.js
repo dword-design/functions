@@ -6,10 +6,10 @@ export default {
   indented: () =>
     expect({ bar: 2, foo: 1 } |> jsonToString({ indent: 2 })).toEqual(endent`
       {
-        "foo": 1,
-        "bar": 2
+        "bar": 2,
+        "foo": 1
       }
     `),
   object: () =>
-    expect({ bar: 2, foo: 1 } |> jsonToString()).toEqual('{"foo":1,"bar":2}'),
+    expect({ bar: 2, foo: 1 } |> jsonToString()).toEqual('{"bar":2,"foo":1}'),
 }

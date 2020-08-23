@@ -20,13 +20,13 @@ export default {
     forIn((value, key) => {
       result += key
     })({ bar: 2, baz: 3, foo: 1 })
-    expect(result).toEqual('foobarbaz')
+    expect(result).toEqual('barbazfoo')
   },
   'object value': () => {
     let result = ''
     forIn(value => {
       result += value
     })({ bar: 2, baz: 3, foo: 1 })
-    expect(result).toEqual('123')
+    expect(result).toEqual('231')
   },
 }
