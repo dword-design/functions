@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/dword-design/functions/compare/v1.1.4...v1.1.5) (2020-12-10)
+
+
+### Bug Fixes
+
+* **config:** Update changed files ([b5dd082](https://github.com/dword-design/functions/commit/b5dd0829522427277b0ec566d54c684a638849eb))
+
 ## [1.1.4](https://github.com/dword-design/functions/compare/v1.1.3...v1.1.4) (2020-08-23)
 
 
