@@ -70,6 +70,7 @@ import reduce from './reduce'
 import remove from './remove'
 import repeat from './repeat'
 import replace from './replace'
+import reverse from './reverse'
 import rgba from './rgba'
 import setLocalStorageItem from './set-local-storage-item'
 import slice from './slice'
@@ -188,4 +189,5 @@ export {
   trimChars,
   indexOf,
   call,
+  reverse,
 }
