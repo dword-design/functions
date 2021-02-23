@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/dword-design/functions/compare/v1.1.7...v1.2.0) (2021-02-23)
+
+
+### Features
+
+* add reverse function ([#31](https://github.com/dword-design/functions/issues/31)) ([57674da](https://github.com/dword-design/functions/commit/57674da42394dd979eb499581f176d60d1a43465))
+
 ## [1.1.7](https://github.com/dword-design/functions/compare/v1.1.6...v1.1.7) (2021-02-17)
 
 
