@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/dword-design/functions/compare/v1.2.2...v1.3.0) (2021-03-22)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#36](https://github.com/dword-design/functions/issues/36)) ([a0d1a41](https://github.com/dword-design/functions/commit/a0d1a41ffad85e9388e21afee68af83d1b8c4231))
+
+
+### Features
+
+* add delay function ([#37](https://github.com/dword-design/functions/issues/37)) ([4ce56ea](https://github.com/dword-design/functions/commit/4ce56ea87ff7c87688788a248526c6c7f9b85cf9))
+
 ## [1.2.2](https://github.com/dword-design/functions/compare/v1.2.1...v1.2.2) (2021-03-17)
 
 
