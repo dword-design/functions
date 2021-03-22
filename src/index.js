@@ -8,6 +8,7 @@ import compact from './compact'
 import consoleLog from './console-log'
 import constant from './constant'
 import darken from './darken'
+import delay from './delay'
 import divide from './divide'
 import drop from './drop'
 import dropRight from './drop-right'
@@ -95,6 +96,7 @@ import xor from './xor'
 import zipObject from './zip-object'
 
 export {
+  delay,
   chunk,
   replace,
   startsWith,
