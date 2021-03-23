@@ -23,7 +23,7 @@ import findKey from './find-key'
 import first from './first'
 import flatMap from './flat-map'
 import flatten from './flatten'
-import forIn from './for-in'
+import forEach from './for-each'
 import fromPairs from './from-pairs'
 import getLocalStorageItem from './get-local-storage-item'
 import groupBy from './group-by'
@@ -160,7 +160,7 @@ export {
   find,
   findIndex,
   findKey,
-  forIn,
+  forEach,
   mapKeys,
   divide,
   filter,
