@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/dword-design/functions/compare/v2.7.2...v3.0.0) (2021-03-23)
+
+
+### Bug Fixes
+
+* rename forIn to forEach and make it non-functional ([#38](https://github.com/dword-design/functions/issues/38)) ([d7f137d](https://github.com/dword-design/functions/commit/d7f137d4c182422b39cd3b24ce57605ddd7d0292))
+
+
+### BREAKING CHANGES
+
+* rename forIn to forEach and make it non-functional
+
 # [2.0.0](https://github.com/dword-design/functions/compare/v1.3.0...v2.0.0) (2021-03-23)
 
 
