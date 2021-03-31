@@ -8,10 +8,13 @@ import mapValues from './map-values'
 
 let browser
 let page
+
 const runTest = config => () => {
   config = { files: {}, ...config }
+
   return withLocalTmpDir(async () => {
     await outputFiles(config.files)
+
     const nuxt = new Nuxt({ dev: false })
     await new Builder(nuxt).build()
     await nuxt.listen()
