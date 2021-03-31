@@ -3,6 +3,7 @@ import cloneDeep from './clone-deep'
 export default {
   array: () => {
     const array = [1, 2, 3]
+
     const array2 = array |> cloneDeep
     array2[1] = 1
     expect(array).toEqual([1, 2, 3])
@@ -11,6 +12,7 @@ export default {
   number: () => expect(2 |> cloneDeep).toEqual(2),
   object: () => {
     const obj = { bar: 2, foo: 1 }
+
     const obj2 = obj |> cloneDeep
     obj2.foo = 2
     expect(obj).toEqual({ bar: 2, foo: 1 })
