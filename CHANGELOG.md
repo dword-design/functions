@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/dword-design/functions/compare/v3.0.0...v3.0.1) (2021-04-12)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#41](https://github.com/dword-design/functions/issues/41)) ([e204067](https://github.com/dword-design/functions/commit/e204067ba0bc71b19fb2ecac5c8d429d48e32493))
+
 # [3.0.0](https://github.com/dword-design/functions/compare/v2.7.2...v3.0.0) (2021-03-23)
 
 
