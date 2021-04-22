@@ -1,3 +1,11 @@
+## [3.0.3](https://github.com/dword-design/functions/compare/v3.0.2...v3.0.3) (2021-04-22)
+
+
+### Bug Fixes
+
+* update config files ([5dfb270](https://github.com/dword-design/functions/commit/5dfb270035cb7c9c68ed9923b193b0ae5102e9e9))
+* updated package.json[description] ([#50](https://github.com/dword-design/functions/issues/50)) ([af2b48a](https://github.com/dword-design/functions/commit/af2b48a3550092d39dcfc516b2db52b05cbf2136))
+
 ## [3.0.2](https://github.com/dword-design/functions/compare/v3.0.1...v3.0.2) (2021-04-21)
 
 
