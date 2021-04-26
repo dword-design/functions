@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@dword-design/base": "^7.0.0",
-    "@dword-design/puppeteer": "^3.0.0",
+    "@dword-design/puppeteer": "^4.0.0",
     "camel-case": "^4.1.2",
     "globby": "^11.0.3",
     "measure-time": "^5.0.1",
