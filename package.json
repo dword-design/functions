@@ -34,7 +34,7 @@
     "mock-stdio": "^1.0.3",
     "nuxt": "^2.12.2",
     "output-files": "^1.1.12",
-    "with-local-tmp-dir": "^2.2.5"
+    "with-local-tmp-dir": "^3.0.0"
   },
   "publishConfig": {
     "access": "public"
