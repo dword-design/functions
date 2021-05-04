@@ -32,7 +32,7 @@
     "measure-time": "^5.0.1",
     "mock-stdio": "^1.0.3",
     "nuxt": "^2.12.2",
-    "output-files": "^1.1.12",
+    "output-files": "^2.0.0",
     "with-local-tmp-dir": "^4.0.0"
   },
   "engines": {
