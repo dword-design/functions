@@ -1,3 +1,11 @@
+## [4.0.1](https://github.com/dword-design/functions/compare/v4.0.0...v4.0.1) (2021-05-04)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/puppeteer to v5 ([#56](https://github.com/dword-design/functions/issues/56)) ([1ddc269](https://github.com/dword-design/functions/commit/1ddc2692ef7c4dfa4cbd357d3d6f44279cd8beb1))
+* update dependency with-local-tmp-dir to v4 ([#58](https://github.com/dword-design/functions/issues/58)) ([dc6c415](https://github.com/dword-design/functions/commit/dc6c4154c6bb3af410e15facf8a11795ebfc251c))
+
 # [4.0.0](https://github.com/dword-design/functions/compare/v3.0.5...v4.0.0) (2021-05-03)
 
 
