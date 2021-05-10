@@ -1,3 +1,5 @@
 import drop from 'lodash/drop'
 
-export default (n = 1) => array => drop(array, n)
+export default (n = 1) =>
+  array =>
+    drop(array, n)

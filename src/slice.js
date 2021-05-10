@@ -1,1 +1,3 @@
-export default (...args) => array => array.slice(...args)
+export default (...args) =>
+  array =>
+    array.slice(...args)
