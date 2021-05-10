@@ -9,7 +9,6 @@ export default {
     ).toEqual([3, 1]),
   'object value filter': () =>
     expect({ bar: 2, baz: 3, foo: 1 } |> filter(value => value !== 2)).toEqual([
-      3,
-      1,
+      3, 1,
     ]),
 }
