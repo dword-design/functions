@@ -1,3 +1,10 @@
+## [4.0.3](https://github.com/dword-design/functions/compare/v4.0.2...v4.0.3) (2021-05-28)
+
+
+### Bug Fixes
+
+* update config files ([0a1b7b8](https://github.com/dword-design/functions/commit/0a1b7b8960b90f989844e7729d496e93f09f03fe))
+
 ## [4.0.2](https://github.com/dword-design/functions/compare/v4.0.1...v4.0.2) (2021-05-04)
 
 
