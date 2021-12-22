@@ -1,3 +1,10 @@
+## [4.0.7](https://github.com/dword-design/functions/compare/v4.0.6...v4.0.7) (2021-12-22)
+
+
+### Bug Fixes
+
+* replace endent fork with published version ([1832bd4](https://github.com/dword-design/functions/commit/1832bd4391066ae6768b4b4f59512d247012d353))
+
 ## [4.0.6](https://github.com/dword-design/functions/compare/v4.0.5...v4.0.6) (2021-07-20)
 
 
