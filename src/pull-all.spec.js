@@ -1,9 +1,9 @@
 import pullAll from './pull-all'
 
 export default {
-  valid: () =>
-    expect(['foo', 'bar', 'baz', 'next'] |> pullAll(['bar', 'baz'])).toEqual([
-      'foo',
-      'next',
-    ]),
+  valid: () => {
+    const array = ['foo', 'bar', 'baz', 'next']
+    expect(array |> pullAll(['bar', 'baz'])).toEqual(['foo', 'next'])
+    expect(array).toEqual(['foo', 'bar', 'baz', 'next'])
+  },
 }
