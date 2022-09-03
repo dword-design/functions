@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/dword-design/functions/compare/v4.0.7...v4.1.0) (2022-09-03)
+
+
+### Features
+
+* uniqBy ([#116](https://github.com/dword-design/functions/issues/116)) ([dbf49aa](https://github.com/dword-design/functions/commit/dbf49aaa4062b5dceac672372c6ae0c0b540d677))
+
 ## [4.0.7](https://github.com/dword-design/functions/compare/v4.0.6...v4.0.7) (2021-12-22)
 
 
