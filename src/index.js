@@ -91,6 +91,7 @@ import trim from './trim'
 import trimChars from './trim-chars'
 import unary from './unary'
 import uniq from './uniq'
+import uniqBy from './uniq-by'
 import values from './values'
 import xor from './xor'
 import zipObject from './zip-object'
@@ -192,4 +193,5 @@ export {
   indexOf,
   call,
   reverse,
+  uniqBy,
 }
