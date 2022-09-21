@@ -28,7 +28,7 @@
     "@dword-design/base": "^8.0.0",
     "@dword-design/puppeteer": "^5.0.0",
     "camel-case": "^4.1.2",
-    "globby": "^11.0.3",
+    "globby": "^13.0.0",
     "measure-time": "^5.0.1",
     "mock-stdio": "^1.0.3",
     "nuxt": "^2.12.2",
