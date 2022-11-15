@@ -25,7 +25,7 @@
     "tinycolor2": "^1.4.1"
   },
   "devDependencies": {
-    "@dword-design/base": "^8.0.0",
+    "@dword-design/base": "^9.0.0",
     "@dword-design/puppeteer": "^5.0.0",
     "camel-case": "^4.1.2",
     "globby": "^11.0.3",
