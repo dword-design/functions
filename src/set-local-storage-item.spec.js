@@ -56,8 +56,11 @@ export default tester(
             'data',
             data => data.toString() === 'Listening http://[::]:3000\n'
           )
-          await config.test.call(this)
-          await kill(childProcess.pid)
+          try {
+            await config.test.call(this)
+          } finally {
+            await kill(childProcess.pid)
+          }
         }
       },
     },
