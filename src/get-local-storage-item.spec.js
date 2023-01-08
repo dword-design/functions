@@ -66,10 +66,7 @@ export default tester(
         config = { files: {}, ...config }
 
         return async function () {
-          await outputFiles({
-            'package.json': JSON.stringify({ type: 'module' }),
-            ...config.files,
-          })
+          await outputFiles(config.files)
 
           const nuxt = new Nuxt({ dev: false })
           await new Builder(nuxt).build()
