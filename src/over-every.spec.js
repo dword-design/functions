@@ -1,4 +1,4 @@
-import overEvery from './over-every'
+import overEvery from './over-every.js'
 
 export default {
   'multiple false': () =>

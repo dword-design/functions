@@ -1,4 +1,4 @@
-import mapKeys from './map-keys'
+import mapKeys from './map-keys.js'
 
 export default {
   key: () =>

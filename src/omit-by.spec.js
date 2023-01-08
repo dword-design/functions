@@ -1,4 +1,4 @@
-import omitBy from './omit-by'
+import omitBy from './omit-by.js'
 
 export default {
   key: () =>

@@ -1,4 +1,4 @@
-import findKey from './find-key'
+import findKey from './find-key.js'
 
 export default {
   false: () =>

@@ -1,4 +1,4 @@
-import range from './range'
+import range from './range.js'
 
 export default {
   'no start': () => expect(range(4)).toEqual([0, 1, 2, 3]),

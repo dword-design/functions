@@ -1,4 +1,4 @@
-import isEmpty from './is-empty'
+import isEmpty from './is-empty.js'
 
 export default {
   array: () => {

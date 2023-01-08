@@ -1,4 +1,4 @@
-import fromPairs from './from-pairs'
+import fromPairs from './from-pairs.js'
 
 export default {
   valid: () =>

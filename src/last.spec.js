@@ -1,4 +1,4 @@
-import last from './last'
+import last from './last.js'
 
 export default {
   empty: () => expect([] |> last).toBeUndefined(),

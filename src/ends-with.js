@@ -1,3 +1,3 @@
-import endsWith from 'lodash/fp/endsWith'
+import endsWith from 'lodash/fp/endsWith.js'
 
 export default endsWith

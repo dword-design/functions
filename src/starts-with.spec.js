@@ -1,4 +1,4 @@
-import startsWith from './starts-with'
+import startsWith from './starts-with.js'
 
 export default {
   false: () => expect('barbazfoo' |> startsWith('foo')).toBeFalsy(),

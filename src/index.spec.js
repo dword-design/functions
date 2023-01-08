@@ -1,14 +1,17 @@
 import { camelCase } from 'camel-case'
-import globby from 'globby'
+import { globby } from 'globby'
 import P from 'path'
+import { fileURLToPath } from 'url'
 
-import * as self from '.'
-import fromPairs from './from-pairs'
-import map from './map'
-import mapKeys from './map-keys'
-import mapValues from './map-values'
-import omit from './omit'
-import stubObject from './stub-object'
+import fromPairs from './from-pairs.js'
+import * as self from './index.js'
+import map from './map.js'
+import mapKeys from './map-keys.js'
+import mapValues from './map-values.js'
+import omit from './omit.js'
+import stubObject from './stub-object.js'
+
+const __dirname = P.dirname(fileURLToPath(import.meta.url))
 
 export default {
   'all files': async () => {

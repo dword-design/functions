@@ -1,3 +1,3 @@
-import mergeAll from 'lodash/fp/mergeAll'
+import mergeAll from 'lodash/fp/mergeAll.js'
 
 export default mergeAll

@@ -1,4 +1,4 @@
-import indexOf from './index-of'
+import indexOf from './index-of.js'
 
 export default {
   found: () => expect(['foo', 'bar'] |> indexOf('bar')).toEqual(1),

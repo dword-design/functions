@@ -1,4 +1,4 @@
-import self from './for-each'
+import self from './for-each.js'
 
 export default {
   'array key': () => {

@@ -1,4 +1,4 @@
-import abs from './abs'
+import abs from './abs.js'
 
 export default {
   valid: () => {

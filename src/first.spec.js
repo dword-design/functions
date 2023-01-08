@@ -1,4 +1,4 @@
-import first from './first'
+import first from './first.js'
 
 export default {
   false: () => expect([] |> first).toBeUndefined(),

@@ -1,4 +1,4 @@
-import self from './reverse'
+import self from './reverse.js'
 
 export default {
   works: () => {

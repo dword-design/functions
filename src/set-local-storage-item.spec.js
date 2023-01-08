@@ -1,58 +1,65 @@
-import puppeteer from '@dword-design/puppeteer'
-import { Builder, Nuxt } from 'nuxt'
+import tester from '@dword-design/tester'
+import testerPluginPuppeteer from '@dword-design/tester-plugin-puppeteer'
+import testerPluginTmpDir from '@dword-design/tester-plugin-tmp-dir'
+import { loadNuxt } from '@nuxt/kit'
+import { execaCommand } from 'execa'
+import { build } from 'nuxt'
 import outputFiles from 'output-files'
-import withLocalTmpDir from 'with-local-tmp-dir'
+import { pEvent } from 'p-event'
+import kill from 'tree-kill-promise'
 
-import endent from './endent'
-import mapValues from './map-values'
+import endent from './endent.js'
 
-let browser
-let page
-
-const runTest = config => () => {
-  config = { files: {}, ...config }
-
-  return withLocalTmpDir(async () => {
-    await outputFiles(config.files)
-
-    const nuxt = new Nuxt({ dev: false })
-    await new Builder(nuxt).build()
-    await nuxt.listen()
-    await config.test()
-    await nuxt.close()
-  })
-}
-
-export default {
-  after: () => browser.close(),
-  before: async () => {
-    browser = await puppeteer.launch()
-    page = await browser.newPage()
-  },
-  ...({
+export default tester(
+  {
     valid: {
       files: {
         'pages/index.vue': endent`
-          <template>
-            <div>{{ foo || undefined }}</div>
-          </template>
+        <template>
+          <div>{{ foo || undefined }}</div>
+        </template>
 
-          <script>
-          import setLocalStorageItem from '../../src/set-local-storage-item'
+        <script>
+        import setLocalStorageItem from '../../src/set-local-storage-item.js'
 
-          export default {
-            computed: {
-              foo: () => process.browser ? localStorage.getItem('foo') : undefined,
-            },
-            beforeMount: () => setLocalStorageItem('foo', 'bar'),
-          }
-          </script>
-        `,
+        export default {
+          computed: {
+            foo: () => process.browser ? localStorage.getItem('foo') : undefined,
+          },
+          beforeMount: () => setLocalStorageItem('foo', 'bar'),
+        }
+        </script>
+      `,
       },
-      test: async () => {
-        await page.goto('http://localhost:3000')
-        expect(await page.content()).toMatch('<div>bar</div>')
+      async test() {
+        await this.page.goto('http://localhost:3000')
+        expect(await this.page.content()).toMatch('<div>bar</div>')
       },
     },
-  } |> mapValues(runTest)),
-}
+  },
+  [
+    testerPluginTmpDir(),
+    testerPluginPuppeteer(),
+    {
+      transform: config => {
+        config = { files: {}, ...config }
+
+        return async function () {
+          await outputFiles(config.files)
+
+          const nuxt = await loadNuxt({ config: { telemetry: false } })
+          await build(nuxt)
+
+          const childProcess = execaCommand('nuxt start', { all: true })
+          await pEvent(
+            childProcess.all,
+            'data',
+            data => data.toString() === 'Listening http://[::]:3000\n'
+          )
+          await config.test.call(this)
+          await kill(childProcess.pid)
+        }
+      },
+    },
+  ]
+)

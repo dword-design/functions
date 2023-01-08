@@ -1,4 +1,4 @@
-import endent from './endent'
+import endent from './endent.js'
 
 export default {
   'empty first line': () =>

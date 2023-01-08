@@ -1,4 +1,4 @@
-import dropRight from 'lodash/dropRight'
+import dropRight from 'lodash/dropRight.js'
 
 export default (n = 1) =>
   array =>

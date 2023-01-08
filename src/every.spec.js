@@ -1,4 +1,4 @@
-import every from './every'
+import every from './every.js'
 
 export default {
   'array false': () => expect([1, 2, 3] |> every(x => x >= 2)).toBeFalsy(),

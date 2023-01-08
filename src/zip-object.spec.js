@@ -1,4 +1,4 @@
-import zipObject from './zip-object'
+import zipObject from './zip-object.js'
 
 export default {
   valid: () =>

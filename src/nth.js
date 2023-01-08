@@ -1,3 +1,3 @@
-import nth from 'lodash/fp/nth'
+import nth from 'lodash/fp/nth.js'
 
 export default nth

@@ -1,4 +1,4 @@
-import cloneDeep from './clone-deep'
+import cloneDeep from './clone-deep.js'
 
 export default {
   array: () => {

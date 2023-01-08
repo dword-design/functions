@@ -1,4 +1,4 @@
-import promiseAll from './promise-all'
+import promiseAll from './promise-all.js'
 
 export default {
   valid: async () =>
