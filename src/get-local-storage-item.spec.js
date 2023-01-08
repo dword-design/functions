@@ -70,7 +70,10 @@ export default tester(
         config = { files: {}, ...config }
 
         return async function () {
-          await outputFiles(config.files)
+          await outputFiles({
+            'package.json': JSON.stringify({ type: 'module' }),
+            ...config.files,
+          })
 
           const nuxt = await loadNuxt({ config: { telemetry: false } })
           await build(nuxt)
