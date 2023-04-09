@@ -1271,9 +1271,9 @@
     "@dword-design/babel-config" "^2.1.0"
 
 "@dword-design/base-config-node@^1.6.0":
-  version "1.10.5"
-  resolved "https://registry.yarnpkg.com/@dword-design/base-config-node/-/base-config-node-1.10.5.tgz#2f89cfc20a2e9183e920cede50555dff7cada4b7"
-  integrity sha512-itoX+TsMziIFcHhKKyJHPEjIfOfU//5CHZOjnOsfv5iMaq2G96kFqvTWc0aswbKxq1XJxMCW3pPRji5o4ZwNsQ==
+  version "1.11.5"
+  resolved "https://registry.yarnpkg.com/@dword-design/base-config-node/-/base-config-node-1.11.5.tgz#e457bd315e9c22ab82be5cbb2784fd5d33d2af92"
+  integrity sha512-KO4WjLEbbt2jyJotZuk4QTk0qmZi+A6Uf6b8OkSMDy9VVmvwSCvuSJSVbynLj161T6Vrh1b7zHsusXL/Mhy5Dg==
   dependencies:
     "@babel/cli" "^7.7.5"
     "@babel/core" "^7.7.5"
@@ -1283,7 +1283,7 @@
     debounce "^1.2.0"
     delete-empty "^3.0.0"
     eslint "^8.28.0"
-    execa "^6.1.0"
+    execa "^7.0.0"
     fs-extra "^11.0.0"
     load-pkg "^4.0.0"
     micromatch "^4.0.2"
@@ -6483,6 +6483,21 @@ execa@^6.1.0:
     signal-exit "^3.0.7"
     strip-final-newline "^3.0.0"
 
+execa@^7.0.0:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/execa/-/execa-7.1.1.tgz#3eb3c83d239488e7b409d48e8813b76bb55c9c43"
+  integrity sha512-wH0eMf/UXckdUYnO21+HDztteVv05rq2GXksxT4fCGeHkBhw1DROXh40wcjMcRqDOWE7iPJ4n3M7e2+YFP+76Q==
+  dependencies:
+    cross-spawn "^7.0.3"
+    get-stream "^6.0.1"
+    human-signals "^4.3.0"
+    is-stream "^3.0.0"
+    merge-stream "^2.0.0"
+    npm-run-path "^5.1.0"
+    onetime "^6.0.0"
+    signal-exit "^3.0.7"
+    strip-final-newline "^3.0.0"
+
 exit@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/exit/-/exit-0.1.2.tgz#0632638f8d877cc82107d30a0fff1a17cba1cd0c"
@@ -7976,6 +7991,11 @@ human-signals@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-3.0.1.tgz#c740920859dafa50e5a3222da9d3bf4bb0e5eef5"
   integrity sha512-rQLskxnM/5OCldHo+wNXbpVgDn5A17CUoKX+7Sokwaknlq7CdSnphy0W39GU8dw59XiCXmFXDg4fRuckQRKewQ==
+
+human-signals@^4.3.0:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-4.3.1.tgz#ab7f811e851fca97ffbd2c1fe9a958964de321b2"
+  integrity sha512-nZXjEF2nbo7lIw3mgYjItAfgQXog3OjJogSbKa2CQIIvSGWcKgeJnQlNXip6NglNzYH45nSRiEVimMvYL8DDqQ==
 
 humanize-ms@^1.2.1:
   version "1.2.1"
