@@ -1,3 +1,10 @@
+## [4.1.2](https://github.com/dword-design/functions/compare/v4.1.1...v4.1.2) (2023-04-09)
+
+
+### Bug Fixes
+
+* exports ([e378808](https://github.com/dword-design/functions/commit/e378808a048e19dc922ea5bb729da52eb4b6188c))
+
 ## [4.1.1](https://github.com/dword-design/functions/compare/v4.1.0...v4.1.1) (2023-04-09)
 
 
