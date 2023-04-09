@@ -1,3 +1,10 @@
+## [4.1.3](https://github.com/dword-design/functions/compare/v4.1.2...v4.1.3) (2023-04-09)
+
+
+### Bug Fixes
+
+* trigger ([bcd948c](https://github.com/dword-design/functions/commit/bcd948c64fc3d8e4fbf2c5a77d2a8c3e5fd35bdc))
+
 ## [4.1.2](https://github.com/dword-design/functions/compare/v4.1.1...v4.1.2) (2023-04-09)
 
 
