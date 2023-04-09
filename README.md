@@ -65,6 +65,10 @@ $ yarn add @dword-design/functions
 ```
 <!-- /INSTALL -->
 
+## Usage
+
+Temporary
+
 <!-- LICENSE/ -->
 ## Contribute
 
