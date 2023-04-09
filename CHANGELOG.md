@@ -1,3 +1,10 @@
+## [4.1.1](https://github.com/dword-design/functions/compare/v4.1.0...v4.1.1) (2023-04-09)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#117](https://github.com/dword-design/functions/issues/117)) ([4240ccf](https://github.com/dword-design/functions/commit/4240ccfb099bfb9180142472c9fb394189a31e1b))
+
 # [4.1.0](https://github.com/dword-design/functions/compare/v4.0.7...v4.1.0) (2022-09-03)
 
 
