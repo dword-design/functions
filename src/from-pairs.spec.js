@@ -6,6 +6,6 @@ export default {
       [
         ['foo', 1],
         ['bar', 2],
-      ] |> fromPairs
+      ] |> fromPairs,
     ).toEqual({ bar: 2, foo: 1 }),
 }

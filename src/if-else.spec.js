@@ -9,8 +9,8 @@ export default {
         |> ifElse(
           array => array.length === 2,
           map(multiply(2)),
-          map(multiply(3))
-        )
+          map(multiply(3)),
+        ),
     ).toEqual([3, 6, 9]),
   true: () =>
     expect(
@@ -18,7 +18,7 @@ export default {
         |> ifElse(
           array => array.length === 3,
           map(multiply(2)),
-          map(multiply(3))
-        )
+          map(multiply(3)),
+        ),
     ).toEqual([2, 4, 6]),
 }

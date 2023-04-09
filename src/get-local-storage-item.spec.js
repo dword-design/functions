@@ -11,22 +11,22 @@ export default tester(
     existing: {
       files: {
         'pages/index.vue': endent`
-        <template>
-          <div>{{ foo || 'undefined' }}</div>
-        </template>
+          <template>
+            <div>{{ foo || 'undefined' }}</div>
+          </template>
 
-        <script>
-        import getLocalStorageItem from '../../src/get-local-storage-item.js'
+          <script>
+          import getLocalStorageItem from '../../src/get-local-storage-item.js'
 
-        export default {
-          computed: {
-            foo: () => process.browser ? getLocalStorageItem('foo') : undefined,
-          },
-          beforeMount: () => localStorage.setItem('foo', 'bar'),
-        }
-        </script>
+          export default {
+            computed: {
+              foo: () => process.browser ? getLocalStorageItem('foo') : undefined,
+            },
+            beforeMount: () => localStorage.setItem('foo', 'bar'),
+          }
+          </script>
 
-      `,
+        `,
       },
       async test() {
         await this.page.goto('http://localhost:3000')
@@ -36,21 +36,21 @@ export default tester(
     'non-existing': {
       files: {
         'pages/index.vue': endent`
-        <template>
-          <div>{{ foo || 'undefined' }}</div>
-        </template>
+          <template>
+            <div>{{ foo || 'undefined' }}</div>
+          </template>
 
-        <script>
-        import getLocalStorageItem from '../../src/get-local-storage-item.js'
+          <script>
+          import getLocalStorageItem from '../../src/get-local-storage-item.js'
 
-        export default {
-          computed: {
-            foo: () => process.browser ? getLocalStorageItem('foo') : undefined,
-          },
-        }
-        </script>
+          export default {
+            computed: {
+              foo: () => process.browser ? getLocalStorageItem('foo') : undefined,
+            },
+          }
+          </script>
 
-      `,
+        `,
       },
       async test() {
         await this.page.goto('http://localhost:3000')
@@ -79,5 +79,5 @@ export default tester(
         }
       },
     },
-  ]
+  ],
 )
