@@ -1,3 +1,15 @@
+# [5.0.0](https://github.com/dword-design/functions/compare/v4.1.6...v5.0.0) (2023-04-09)
+
+
+### Bug Fixes
+
+* esm support ([795c62a](https://github.com/dword-design/functions/commit/795c62a69dc0d29af4ac8af3cb3a83fbd225da58))
+
+
+### BREAKING CHANGES
+
+* move to esm
+
 ## [4.1.6](https://github.com/dword-design/functions/compare/v4.1.5...v4.1.6) (2023-04-09)
 
 
