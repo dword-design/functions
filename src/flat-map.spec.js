@@ -1,5 +1,5 @@
-import flatMap from './flat-map'
-import map from './map'
+import flatMap from './flat-map.js'
+import map from './map.js'
 
 export default {
   valid: () =>

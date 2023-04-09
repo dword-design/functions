@@ -1,4 +1,4 @@
-import findIndex from './find-index'
+import findIndex from './find-index.js'
 
 const array = [
   { bar: 2, foo: 1 },

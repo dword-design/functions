@@ -1,3 +1,3 @@
-import intersection from 'lodash/fp/intersection'
+import intersection from 'lodash/fp/intersection.js'
 
 export default intersection

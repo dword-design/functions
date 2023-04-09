@@ -1,4 +1,4 @@
-import flatten from './flatten'
+import flatten from './flatten.js'
 
 export default {
   valid: () =>

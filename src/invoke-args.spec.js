@@ -1,4 +1,4 @@
-import invokeArgs from './invoke-args'
+import invokeArgs from './invoke-args.js'
 
 export default {
   valid: () =>

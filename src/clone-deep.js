@@ -1,3 +1,3 @@
-import cloneDeep from 'lodash/fp/cloneDeep'
+import cloneDeep from 'lodash/fp/cloneDeep.js'
 
 export default cloneDeep

@@ -1,3 +1,3 @@
-import zipObject from 'lodash/fp/zipObject'
+import zipObject from 'lodash/fp/zipObject.js'
 
 export default zipObject

@@ -1,6 +1,6 @@
 import { measureTime } from 'measure-time'
 
-import self from './delay'
+import self from './delay.js'
 
 export default {
   works: async () => {

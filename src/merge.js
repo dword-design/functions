@@ -1,4 +1,4 @@
-import merge from 'lodash/merge'
+import merge from 'lodash/merge.js'
 
 export default (...others) =>
   source =>

@@ -1,4 +1,4 @@
-import mergeAll from './merge-all'
+import mergeAll from './merge-all.js'
 
 export default {
   array: () =>

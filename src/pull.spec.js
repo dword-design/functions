@@ -1,4 +1,4 @@
-import pull from './pull'
+import pull from './pull.js'
 
 export default {
   valid: () =>

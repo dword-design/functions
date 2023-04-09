@@ -1,4 +1,4 @@
-import isNaN from './is-na-n'
+import isNaN from './is-na-n.js'
 
 export default {
   nan: () => expect(NaN |> isNaN).toBeTruthy(),

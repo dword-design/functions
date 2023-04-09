@@ -1,4 +1,4 @@
-import pullAll from './pull-all'
+import pullAll from './pull-all.js'
 
 export default {
   valid: () => {

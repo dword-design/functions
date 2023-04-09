@@ -1,6 +1,6 @@
 import mockStdio from 'mock-stdio'
 
-import consoleLog from './console-log'
+import consoleLog from './console-log.js'
 
 export default {
   valid: () => {

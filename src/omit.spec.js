@@ -1,4 +1,4 @@
-import omit from './omit'
+import omit from './omit.js'
 
 export default {
   multiple: () =>

@@ -1,4 +1,4 @@
-import pick from './pick'
+import pick from './pick.js'
 
 export default {
   valid: () =>

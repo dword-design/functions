@@ -1,4 +1,4 @@
-import some from './some'
+import some from './some.js'
 
 export default {
   'array false': () => expect([1, 2, 3] |> some(x => x >= 4)).toBeFalsy(),

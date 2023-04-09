@@ -1,4 +1,4 @@
-import parseInt from './parse-int'
+import parseInt from './parse-int.js'
 
 export default {
   'base 10': () => expect('2' |> parseInt).toEqual(2),

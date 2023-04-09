@@ -1,3 +1,3 @@
-import join from 'lodash/fp/join'
+import join from 'lodash/fp/join.js'
 
 export default join

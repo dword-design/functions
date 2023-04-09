@@ -1,4 +1,4 @@
-import keyBy from './key-by'
+import keyBy from './key-by.js'
 
 export default {
   valid: () =>

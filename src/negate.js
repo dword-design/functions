@@ -1,3 +1,3 @@
-import negate from 'lodash/fp/negate'
+import negate from 'lodash/fp/negate.js'
 
 export default negate

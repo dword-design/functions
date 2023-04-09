@@ -1,4 +1,4 @@
-import pullAt from './pull-at'
+import pullAt from './pull-at.js'
 
 export default {
   valid: () => {

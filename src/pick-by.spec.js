@@ -1,4 +1,4 @@
-import pickBy from './pick-by'
+import pickBy from './pick-by.js'
 
 export default {
   key: () =>

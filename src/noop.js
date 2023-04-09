@@ -1,3 +1,3 @@
-import noop from 'lodash/fp/noop'
+import noop from 'lodash/fp/noop.js'
 
 export default noop

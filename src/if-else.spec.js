@@ -1,6 +1,6 @@
-import ifElse from './if-else'
-import map from './map'
-import multiply from './multiply'
+import ifElse from './if-else.js'
+import map from './map.js'
+import multiply from './multiply.js'
 
 export default {
   false: () =>

@@ -1,4 +1,4 @@
-import uniqBy from './uniq-by'
+import uniqBy from './uniq-by.js'
 
 export default {
   valid: () =>

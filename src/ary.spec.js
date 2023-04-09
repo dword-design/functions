@@ -1,4 +1,4 @@
-import ary from './ary'
+import ary from './ary.js'
 
 export default {
   valid: () =>

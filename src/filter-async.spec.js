@@ -1,4 +1,4 @@
-import filterAsync from './filter-async'
+import filterAsync from './filter-async.js'
 
 export default {
   valid: async () =>
