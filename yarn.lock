@@ -7579,10 +7579,19 @@ fs-extra@^10.0.0, fs-extra@^10.1.0:
     jsonfile "^6.0.1"
     universalify "^2.0.0"
 
-fs-extra@^11.0.0, fs-extra@^11.1.0:
+fs-extra@^11.0.0:
   version "11.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.1.0.tgz#5784b102104433bb0e090f48bfc4a30742c357ed"
   integrity sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw==
+  dependencies:
+    graceful-fs "^4.2.0"
+    jsonfile "^6.0.1"
+    universalify "^2.0.0"
+
+fs-extra@^11.1.0:
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.1.1.tgz#da69f7c39f3b002378b0954bb6ae7efdc0876e2d"
+  integrity sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==
   dependencies:
     graceful-fs "^4.2.0"
     jsonfile "^6.0.1"
@@ -11833,12 +11842,12 @@ os-tmpdir@~1.0.2:
   integrity sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g==
 
 output-files@^2.0.0:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/output-files/-/output-files-2.0.10.tgz#1ed799cae3685a8d41b3d61e5952d1a4a7ca8171"
-  integrity sha512-5R6yGlEpu0kgno2/xYrmr0fX9nv608ygo2ge7ByVURjyIESHu7uzuWSaksEkOKzf6ZXWAzVQJjeRgSkX205eyQ==
+  version "2.0.23"
+  resolved "https://registry.yarnpkg.com/output-files/-/output-files-2.0.23.tgz#d7fb13fca4ba425f78f35048ac086ec3601bdbad"
+  integrity sha512-55SUoGYSgs5ODyJ4nwb6UE0kkbFYwEgRQlPtIcxbTZX5PLXA3QumBWfBCNP9qNlQNNzNI+wnrJZzN/nXHE7bHQ==
   dependencies:
     "@dword-design/functions" "^4.0.0"
-    fs-extra "^10.0.0"
+    fs-extra "^11.1.0"
 
 p-each-series@^2.1.0:
   version "2.2.0"
