@@ -1,3 +1,10 @@
+## [5.0.4](https://github.com/dword-design/functions/compare/v5.0.3...v5.0.4) (2023-04-10)
+
+
+### Bug Fixes
+
+* update dependency tinycolor2 to v1.6.0 ([ec47dd1](https://github.com/dword-design/functions/commit/ec47dd1ceac52b44ca4179250793cf20fa8fdbb0))
+
 ## [5.0.3](https://github.com/dword-design/functions/compare/v5.0.2...v5.0.3) (2023-04-09)
 
 
