@@ -7,6 +7,6 @@ export default {
       [
         [1, 2],
         [3, 4],
-      ] |> flatMap(array => array |> map(x => x * 2))
+      ] |> flatMap(array => array |> map(x => x * 2)),
     ).toEqual([2, 4, 6, 8]),
 }

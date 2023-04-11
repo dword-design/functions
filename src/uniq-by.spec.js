@@ -6,6 +6,6 @@ export default {
       [
         { bar: 1, foo: 1 },
         { bar: 2, foo: 1 },
-      ] |> uniqBy('foo')
+      ] |> uniqBy('foo'),
     ).toEqual([{ bar: 1, foo: 1 }]),
 }

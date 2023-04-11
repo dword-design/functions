@@ -11,21 +11,21 @@ export default tester(
     valid: {
       files: {
         'pages/index.vue': endent`
-        <template>
-          <div>{{ foo || undefined }}</div>
-        </template>
+          <template>
+            <div>{{ foo || undefined }}</div>
+          </template>
 
-        <script>
-        import setLocalStorageItem from '../../src/set-local-storage-item.js'
+          <script>
+          import setLocalStorageItem from '../../src/set-local-storage-item.js'
 
-        export default {
-          computed: {
-            foo: () => process.browser ? localStorage.getItem('foo') : undefined,
-          },
-          beforeMount: () => setLocalStorageItem('foo', 'bar'),
-        }
-        </script>
-      `,
+          export default {
+            computed: {
+              foo: () => process.browser ? localStorage.getItem('foo') : undefined,
+            },
+            beforeMount: () => setLocalStorageItem('foo', 'bar'),
+          }
+          </script>
+        `,
       },
       async test() {
         await this.page.goto('http://localhost:3000')
@@ -54,5 +54,5 @@ export default tester(
         }
       },
     },
-  ]
+  ],
 )

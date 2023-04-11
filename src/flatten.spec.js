@@ -6,6 +6,6 @@ export default {
       [
         [1, 2],
         [3, 4],
-      ] |> flatten
+      ] |> flatten,
     ).toEqual([1, 2, 3, 4]),
 }
