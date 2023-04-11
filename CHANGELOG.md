@@ -1,3 +1,10 @@
+## [5.0.7](https://github.com/dword-design/functions/compare/v5.0.6...v5.0.7) (2023-04-11)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/tester to v2.0.18 ([ea5243a](https://github.com/dword-design/functions/commit/ea5243a530c728c6379709342f37ff22fd319a8e))
+
 ## [5.0.6](https://github.com/dword-design/functions/compare/v5.0.5...v5.0.6) (2023-04-10)
 
 
