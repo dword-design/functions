@@ -1,3 +1,10 @@
+## [5.0.9](https://github.com/dword-design/functions/compare/v5.0.8...v5.0.9) (2023-04-11)
+
+
+### Bug Fixes
+
+* update dependency output-files to v2.0.25 ([d9a1917](https://github.com/dword-design/functions/commit/d9a1917e2bfb38320da6bf3a6153eab188d9a952))
+
 ## [5.0.8](https://github.com/dword-design/functions/compare/v5.0.7...v5.0.8) (2023-04-11)
 
 
