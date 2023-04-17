@@ -1,3 +1,11 @@
+## [5.0.13](https://github.com/dword-design/functions/compare/v5.0.12...v5.0.13) (2023-04-17)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/puppeteer to v6.0.7 ([be2ffe4](https://github.com/dword-design/functions/commit/be2ffe43976b5a86cb982d90bc604064e9b0fc43))
+* update dependency @dword-design/tester-plugin-puppeteer to v2.1.61 ([69b0a62](https://github.com/dword-design/functions/commit/69b0a620e5a8c765e0bc16440f7a8f1454569a93))
+
 ## [5.0.12](https://github.com/dword-design/functions/compare/v5.0.11...v5.0.12) (2023-04-12)
 
 
