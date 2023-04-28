@@ -1,3 +1,10 @@
+## [5.0.17](https://github.com/dword-design/functions/compare/v5.0.16...v5.0.17) (2023-04-28)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/puppeteer to v6.0.9 ([33d248e](https://github.com/dword-design/functions/commit/33d248ef6123ae6a5b842dd3a55642febc5e12f6))
+
 ## [5.0.16](https://github.com/dword-design/functions/compare/v5.0.15...v5.0.16) (2023-04-28)
 
 
