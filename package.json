@@ -219,7 +219,7 @@
   },
   "dependencies": {
     "@dword-design/endent": "^1.0.0",
-    "delay": "^5.0.0",
+    "delay": "^6.0.0",
     "lodash": "^4.17.15",
     "tinycolor2": "^1.4.1"
   },
