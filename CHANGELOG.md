@@ -1,3 +1,11 @@
+## [5.0.23](https://github.com/dword-design/functions/compare/v5.0.22...v5.0.23) (2023-07-01)
+
+
+### Bug Fixes
+
+* update dependency globby to v13.2.1 ([7c12f50](https://github.com/dword-design/functions/commit/7c12f505778f8a8afe02a4bb011374a37de714a4))
+* update dependency nuxt to v2.17.0 ([9229f05](https://github.com/dword-design/functions/commit/9229f054ad074d28250875bc2e6294fb27049717))
+
 ## [5.0.22](https://github.com/dword-design/functions/compare/v5.0.21...v5.0.22) (2023-06-19)
 
 
