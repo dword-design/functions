@@ -1,3 +1,10 @@
+## [5.0.24](https://github.com/dword-design/functions/compare/v5.0.23...v5.0.24) (2023-07-06)
+
+
+### Bug Fixes
+
+* update dependency globby to v13.2.2 ([93c600d](https://github.com/dword-design/functions/commit/93c600d5dd990db2d196e54bf67e203021cc458f))
+
 ## [5.0.23](https://github.com/dword-design/functions/compare/v5.0.22...v5.0.23) (2023-07-01)
 
 
