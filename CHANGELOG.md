@@ -1,3 +1,10 @@
+## [5.0.25](https://github.com/dword-design/functions/compare/v5.0.24...v5.0.25) (2023-10-24)
+
+
+### Bug Fixes
+
+* update dependency nuxt to v2.17.2 ([bd34cb5](https://github.com/dword-design/functions/commit/bd34cb5601ef1a1528c19412c9d6208fc21de101))
+
 ## [5.0.24](https://github.com/dword-design/functions/compare/v5.0.23...v5.0.24) (2023-07-06)
 
 
