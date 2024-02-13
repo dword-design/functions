@@ -1,3 +1,16 @@
+# [6.0.0](https://github.com/dword-design/functions/compare/v5.0.27...v6.0.0) (2024-02-13)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#134](https://github.com/dword-design/functions/issues/134)) ([0269b62](https://github.com/dword-design/functions/commit/0269b62582206b4ac62a58b50a803779d7909116))
+
+
+### BREAKING CHANGES
+
+* node.js >= 18
+* remove exports
+
 ## [5.0.27](https://github.com/dword-design/functions/compare/v5.0.26...v5.0.27) (2023-11-28)
 
 
