@@ -22,8 +22,8 @@ export default {
         |> fromPairs
         |> omit(['index.js'])
         |> mapKeys(
-          (empty, filename) => P.basename(filename, '.js') |> camelCase
-        )
+          (empty, filename) => P.basename(filename, '.js') |> camelCase,
+        ),
     ).toEqual(self |> mapValues(stubObject))
   },
 }

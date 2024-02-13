@@ -1,8 +1,10 @@
 import tester from '@dword-design/tester'
 import testerPluginPuppeteer from '@dword-design/tester-plugin-puppeteer'
 import testerPluginTmpDir from '@dword-design/tester-plugin-tmp-dir'
-import { Builder, Nuxt } from 'nuxt'
+import { execaCommand } from 'execa'
+import nuxtDevReady from 'nuxt-dev-ready'
 import outputFiles from 'output-files'
+import kill from 'tree-kill-promise'
 
 import endent from './endent.js'
 
@@ -11,22 +13,22 @@ export default tester(
     existing: {
       files: {
         'pages/index.vue': endent`
-        <template>
-          <div>{{ foo || 'undefined' }}</div>
-        </template>
+          <template>
+            <div>{{ foo || 'undefined' }}</div>
+          </template>
 
-        <script>
-        import getLocalStorageItem from '../../src/get-local-storage-item.js'
+          <script>
+          import getLocalStorageItem from '../../src/get-local-storage-item.js'
 
-        export default {
-          computed: {
-            foo: () => process.browser ? getLocalStorageItem('foo') : undefined,
-          },
-          beforeMount: () => localStorage.setItem('foo', 'bar'),
-        }
-        </script>
+          export default {
+            computed: {
+              foo: () => process.browser ? getLocalStorageItem('foo') : undefined,
+            },
+            beforeMount: () => localStorage.setItem('foo', 'bar'),
+          }
+          </script>
 
-      `,
+        `,
       },
       async test() {
         await this.page.goto('http://localhost:3000')
@@ -36,21 +38,21 @@ export default tester(
     'non-existing': {
       files: {
         'pages/index.vue': endent`
-        <template>
-          <div>{{ foo || 'undefined' }}</div>
-        </template>
+          <template>
+            <div>{{ foo || 'undefined' }}</div>
+          </template>
 
-        <script>
-        import getLocalStorageItem from '../../src/get-local-storage-item.js'
+          <script>
+          import getLocalStorageItem from '../../src/get-local-storage-item.js'
 
-        export default {
-          computed: {
-            foo: () => process.browser ? getLocalStorageItem('foo') : undefined,
-          },
-        }
-        </script>
+          export default {
+            computed: {
+              foo: () => process.browser ? getLocalStorageItem('foo') : undefined,
+            },
+          }
+          </script>
 
-      `,
+        `,
       },
       async test() {
         await this.page.goto('http://localhost:3000')
@@ -68,16 +70,15 @@ export default tester(
         return async function () {
           await outputFiles(config.files)
 
-          const nuxt = new Nuxt({ dev: false })
-          await new Builder(nuxt).build()
-          await nuxt.listen()
+          const nuxt = execaCommand('nuxt dev')
           try {
+            await nuxtDevReady()
             await config.test.call(this)
           } finally {
-            await nuxt.close()
+            await kill(nuxt.pid)
           }
         }
       },
     },
-  ]
+  ],
 )

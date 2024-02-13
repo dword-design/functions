@@ -7,7 +7,7 @@ export default {
         { bar: 1, x: 'foo' },
         { bar: 2, x: 'foo' },
         { bar: 3, x: 'bar' },
-      ] |> groupBy('x')
+      ] |> groupBy('x'),
     ).toEqual({
       bar: [{ bar: 3, x: 'bar' }],
       foo: [
