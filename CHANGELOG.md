@@ -1,3 +1,146 @@
+## [5.0.27](https://github.com/dword-design/functions/compare/v5.0.26...v5.0.27) (2023-11-28)
+
+
+### Bug Fixes
+
+* update dependency output-files to v2.0.32 ([10aa257](https://github.com/dword-design/functions/commit/10aa2579af2d611e31bdafe9d06ebc9d8223244f))
+
+## [5.0.26](https://github.com/dword-design/functions/compare/v5.0.25...v5.0.26) (2023-10-24)
+
+
+### Bug Fixes
+
+* update dependency output-files to v2.0.31 ([11a23c9](https://github.com/dword-design/functions/commit/11a23c974dcbd2402c2ef1a21601f7980b9c9a0f))
+
+## [5.0.25](https://github.com/dword-design/functions/compare/v5.0.24...v5.0.25) (2023-10-24)
+
+
+### Bug Fixes
+
+* update dependency nuxt to v2.17.2 ([bd34cb5](https://github.com/dword-design/functions/commit/bd34cb5601ef1a1528c19412c9d6208fc21de101))
+
+## [5.0.24](https://github.com/dword-design/functions/compare/v5.0.23...v5.0.24) (2023-07-06)
+
+
+### Bug Fixes
+
+* update dependency globby to v13.2.2 ([93c600d](https://github.com/dword-design/functions/commit/93c600d5dd990db2d196e54bf67e203021cc458f))
+
+## [5.0.23](https://github.com/dword-design/functions/compare/v5.0.22...v5.0.23) (2023-07-01)
+
+
+### Bug Fixes
+
+* update dependency globby to v13.2.1 ([7c12f50](https://github.com/dword-design/functions/commit/7c12f505778f8a8afe02a4bb011374a37de714a4))
+* update dependency nuxt to v2.17.0 ([9229f05](https://github.com/dword-design/functions/commit/9229f054ad074d28250875bc2e6294fb27049717))
+
+## [5.0.22](https://github.com/dword-design/functions/compare/v5.0.21...v5.0.22) (2023-06-19)
+
+
+### Bug Fixes
+
+* update dependency globby to v13.2.0 ([dea8438](https://github.com/dword-design/functions/commit/dea843874ed8bd51549112a12c4457141bf25b22))
+
+## [5.0.21](https://github.com/dword-design/functions/compare/v5.0.20...v5.0.21) (2023-06-19)
+
+
+### Bug Fixes
+
+* update dependency output-files to v2.0.29 ([8dc159d](https://github.com/dword-design/functions/commit/8dc159d45584125b058485bf539b7a1e8f9455e2))
+
+## [5.0.20](https://github.com/dword-design/functions/compare/v5.0.19...v5.0.20) (2023-05-13)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/puppeteer to v6.0.10 ([b47cc36](https://github.com/dword-design/functions/commit/b47cc362dd8b4a73da1f659b4dce41418cd0684e))
+
+## [5.0.19](https://github.com/dword-design/functions/compare/v5.0.18...v5.0.19) (2023-05-13)
+
+
+### Bug Fixes
+
+* update dependency output-files to v2.0.28 ([50037df](https://github.com/dword-design/functions/commit/50037df24ae0055b87e442f0cce2c62fcd562939))
+
+## [5.0.18](https://github.com/dword-design/functions/compare/v5.0.17...v5.0.18) (2023-05-13)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/tester to v2.0.19 ([352bada](https://github.com/dword-design/functions/commit/352bada61513955ba3bb2a5d1e13be97e339dfa3))
+
+## [5.0.17](https://github.com/dword-design/functions/compare/v5.0.16...v5.0.17) (2023-04-28)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/puppeteer to v6.0.9 ([33d248e](https://github.com/dword-design/functions/commit/33d248ef6123ae6a5b842dd3a55642febc5e12f6))
+
+## [5.0.16](https://github.com/dword-design/functions/compare/v5.0.15...v5.0.16) (2023-04-28)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/tester-plugin-puppeteer to v2.1.68 ([597883e](https://github.com/dword-design/functions/commit/597883e73933f74e7d26390bb89fe311bdafefef))
+
+## [5.0.15](https://github.com/dword-design/functions/compare/v5.0.14...v5.0.15) (2023-04-26)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/puppeteer to v6.0.8 ([3d733e3](https://github.com/dword-design/functions/commit/3d733e3588c541ed72ae8191a188d3721590263f))
+* update dependency @dword-design/tester-plugin-puppeteer to v2.1.66 ([c57b004](https://github.com/dword-design/functions/commit/c57b0046d4bb8f674933e6bc844aa16b82543689))
+
+## [5.0.14](https://github.com/dword-design/functions/compare/v5.0.13...v5.0.14) (2023-04-17)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/tester-plugin-puppeteer to v2.1.63 ([a76d575](https://github.com/dword-design/functions/commit/a76d5754a9f49a3ca3dcc17d91660b2fd76a6f03))
+
+## [5.0.13](https://github.com/dword-design/functions/compare/v5.0.12...v5.0.13) (2023-04-17)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/puppeteer to v6.0.7 ([be2ffe4](https://github.com/dword-design/functions/commit/be2ffe43976b5a86cb982d90bc604064e9b0fc43))
+* update dependency @dword-design/tester-plugin-puppeteer to v2.1.61 ([69b0a62](https://github.com/dword-design/functions/commit/69b0a620e5a8c765e0bc16440f7a8f1454569a93))
+
+## [5.0.12](https://github.com/dword-design/functions/compare/v5.0.11...v5.0.12) (2023-04-12)
+
+
+### Bug Fixes
+
+* update dependency output-files to v2.0.27 ([28c5ddf](https://github.com/dword-design/functions/commit/28c5ddf6883179abc701c5340a94c34a891c79dd))
+
+## [5.0.11](https://github.com/dword-design/functions/compare/v5.0.10...v5.0.11) (2023-04-11)
+
+
+### Bug Fixes
+
+* update dependency globby to v13.1.4 ([4bdc465](https://github.com/dword-design/functions/commit/4bdc46573f54d0c434ed6cc84a6b98f4bd53a8c5))
+
+## [5.0.10](https://github.com/dword-design/functions/compare/v5.0.9...v5.0.10) (2023-04-11)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/tester-plugin-tmp-dir to v2.1.26 ([26ad221](https://github.com/dword-design/functions/commit/26ad2217fa9f783267a00fb49e432d5c5cec9377))
+
+## [5.0.9](https://github.com/dword-design/functions/compare/v5.0.8...v5.0.9) (2023-04-11)
+
+
+### Bug Fixes
+
+* update dependency output-files to v2.0.25 ([d9a1917](https://github.com/dword-design/functions/commit/d9a1917e2bfb38320da6bf3a6153eab188d9a952))
+
+## [5.0.8](https://github.com/dword-design/functions/compare/v5.0.7...v5.0.8) (2023-04-11)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/tester-plugin-puppeteer to v2.1.55 ([1f87b23](https://github.com/dword-design/functions/commit/1f87b23a1762dd89dfb612aa732edec0215aa292))
+
 ## [5.0.7](https://github.com/dword-design/functions/compare/v5.0.6...v5.0.7) (2023-04-11)
 
 
