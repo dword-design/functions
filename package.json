@@ -23,25 +23,28 @@
   },
   "dependencies": {
     "@dword-design/endent": "^1.0.0",
-    "delay": "^5.0.0",
+    "delay": "^6.0.0",
     "lodash": "^4.17.15",
     "tinycolor2": "^1.4.1"
   },
   "devDependencies": {
-    "@dword-design/base": "^9.2.0",
-    "@dword-design/puppeteer": "^6.0.2",
+    "@dword-design/base": "^11.0.4",
+    "@dword-design/puppeteer": "^7.0.0",
     "@dword-design/tester": "^2.0.12",
-    "@dword-design/tester-plugin-puppeteer": "^2.1.22",
+    "@dword-design/tester-plugin-puppeteer": "^3.0.0",
     "@dword-design/tester-plugin-tmp-dir": "^2.1.7",
-    "camel-case": "^4.1.2",
-    "globby": "^13.1.3",
+    "camel-case": "^5.0.0",
+    "execa": "^8.0.1",
+    "globby": "^14.0.1",
     "measure-time": "^5.0.1",
     "mock-stdio": "^1.0.3",
     "nuxt": "^2",
-    "output-files": "^2.0.0"
+    "nuxt-dev-ready": "^3.0.0",
+    "output-files": "^2.0.0",
+    "tree-kill-promise": "^3.0.14"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
   },
   "publishConfig": {
     "access": "public"
