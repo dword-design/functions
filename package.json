@@ -34,7 +34,7 @@
     "@dword-design/tester-plugin-puppeteer": "^3.0.0",
     "@dword-design/tester-plugin-tmp-dir": "^2.1.7",
     "camel-case": "^5.0.0",
-    "execa": "^8.0.1",
+    "execa": "^9.0.0",
     "globby": "^14.0.1",
     "measure-time": "^5.0.1",
     "mock-stdio": "^1.0.3",
