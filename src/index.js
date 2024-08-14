@@ -47,6 +47,7 @@ import map from './map.js'
 import mapKeys from './map-keys.js'
 import mapValues from './map-values.js'
 import max from './max.js'
+import maxBy from './max-by.js'
 import merge from './merge.js'
 import mergeAll from './merge-all.js'
 import min from './min.js'
@@ -117,6 +118,7 @@ export {
   overEvery,
   keys,
   max,
+  maxBy,
   stubArray,
   stubObject,
   join,
