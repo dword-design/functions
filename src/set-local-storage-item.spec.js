@@ -3,8 +3,8 @@ import testerPluginTmpDir from '@dword-design/tester-plugin-tmp-dir';
 import { execaCommand } from 'execa';
 import nuxtDevReady from 'nuxt-dev-ready';
 import outputFiles from 'output-files';
-import kill from 'tree-kill-promise';
 import { chromium } from 'playwright';
+import kill from 'tree-kill-promise';
 
 import endent from './endent.js';
 
@@ -30,8 +30,8 @@ export default tester(
       },
       async test() {
         await this.page.goto('http://localhost:3000');
-        const foo = await this.page.waitForSelector('.foo')
-        expect(await foo.evaluate(_ => _.innerText)).toEqual('bar')
+        const foo = await this.page.waitForSelector('.foo');
+        expect(await foo.evaluate(_ => _.innerText)).toEqual('bar');
       },
     },
   },
