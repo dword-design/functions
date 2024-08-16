@@ -1,3 +1,13 @@
+## [6.0.1](https://github.com/dword-design/functions/compare/v6.0.0...v6.0.1) (2024-08-16)
+
+
+### Bug Fixes
+
+* foo ([a80be7f](https://github.com/dword-design/functions/commit/a80be7fbcb23943ba14033bbd9a50f2a392284cb))
+* lock file maintenance ([#167](https://github.com/dword-design/functions/issues/167)) ([d55c3e4](https://github.com/dword-design/functions/commit/d55c3e4cd7d01ea0e176b974cf304b9f55a81ee9))
+* maxBy ([303700e](https://github.com/dword-design/functions/commit/303700e99d516ae0d4ff5ffa6b46f1f39b8e9d39))
+* update dependency execa to v9 ([#169](https://github.com/dword-design/functions/issues/169)) ([5911756](https://github.com/dword-design/functions/commit/591175616747eea3425bc4fb71c682e06756555a))
+
 # [6.0.0](https://github.com/dword-design/functions/compare/v5.0.27...v6.0.0) (2024-02-13)
 
 
