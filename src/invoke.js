@@ -1,3 +1,3 @@
-import invoke from 'lodash/fp/invoke.js'
+import invoke from 'lodash/fp/invoke.js';
 
-export default invoke
+export default invoke;

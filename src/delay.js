@@ -1,3 +1,3 @@
-import delay from 'delay'
+import delay from 'delay';
 
-export default delay
+export default delay;

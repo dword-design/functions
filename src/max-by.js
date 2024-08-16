@@ -1,3 +1,3 @@
-import maxBy from 'lodash/fp/maxBy.js'
+import maxBy from 'lodash/fp/maxBy.js';
 
-export default maxBy
+export default maxBy;

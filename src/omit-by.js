@@ -1,3 +1,3 @@
-import omitBy from 'lodash/fp/omitBy.js'
+import omitBy from 'lodash/fp/omitBy.js';
 
-export default omitBy
+export default omitBy;

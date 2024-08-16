@@ -1,3 +1,3 @@
-import fromPairs from 'lodash/fp/fromPairs.js'
+import fromPairs from 'lodash/fp/fromPairs.js';
 
-export default fromPairs
+export default fromPairs;

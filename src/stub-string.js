@@ -1,3 +1,3 @@
-import stubString from 'lodash/fp/stubString.js'
+import stubString from 'lodash/fp/stubString.js';
 
-export default stubString
+export default stubString;

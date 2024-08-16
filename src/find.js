@@ -1,3 +1,3 @@
-import find from 'lodash/fp/find.js'
+import find from 'lodash/fp/find.js';
 
-export default find.convert({ cap: false })
+export default find.convert({ cap: false });

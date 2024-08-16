@@ -1,3 +1,3 @@
-import property from 'lodash/fp/property.js'
+import property from 'lodash/fp/property.js';
 
-export default property
+export default property;

@@ -1,9 +1,9 @@
-import self from './reverse.js'
+import self from './reverse.js';
 
 export default {
   works: () => {
-    const array = [1, 2, 3]
-    expect(array |> self).toEqual([3, 2, 1])
-    expect(array).toEqual([1, 2, 3])
+    const array = [1, 2, 3];
+    expect(array |> self).toEqual([3, 2, 1]);
+    expect(array).toEqual([1, 2, 3]);
   },
-}
+};

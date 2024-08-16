@@ -1,3 +1,3 @@
-import trim from 'lodash/fp/trim.js'
+import trim from 'lodash/fp/trim.js';
 
-export default trim
+export default trim;

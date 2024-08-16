@@ -1,5 +1,5 @@
-import merge from 'lodash/merge.js'
+import merge from 'lodash/merge.js';
 
 export default (...others) =>
   source =>
-    merge(source, ...others)
+    merge(source, ...others);

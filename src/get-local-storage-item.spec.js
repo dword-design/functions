@@ -1,12 +1,12 @@
-import tester from '@dword-design/tester'
-import testerPluginPuppeteer from '@dword-design/tester-plugin-puppeteer'
-import testerPluginTmpDir from '@dword-design/tester-plugin-tmp-dir'
-import { execaCommand } from 'execa'
-import nuxtDevReady from 'nuxt-dev-ready'
-import outputFiles from 'output-files'
-import kill from 'tree-kill-promise'
+import tester from '@dword-design/tester';
+import testerPluginTmpDir from '@dword-design/tester-plugin-tmp-dir';
+import { execaCommand } from 'execa';
+import nuxtDevReady from 'nuxt-dev-ready';
+import outputFiles from 'output-files';
+import { chromium } from 'playwright';
+import kill from 'tree-kill-promise';
 
-import endent from './endent.js'
+import endent from './endent.js';
 
 export default tester(
   {
@@ -14,71 +14,78 @@ export default tester(
       files: {
         'pages/index.vue': endent`
           <template>
-            <div>{{ foo || 'undefined' }}</div>
+            <div class="foo">{{ foo }}</div>
           </template>
 
-          <script>
-          import getLocalStorageItem from '../../src/get-local-storage-item.js'
+          <script setup>
+          import { computed, onBeforeMount } from '#imports';
 
-          export default {
-            computed: {
-              foo: () => process.browser ? getLocalStorageItem('foo') : undefined,
-            },
-            beforeMount: () => localStorage.setItem('foo', 'bar'),
-          }
+          import getLocalStorageItem from '../../src/get-local-storage-item.js';
+
+          const foo = computed(() => process.client ? getLocalStorageItem('foo') : undefined);
+
+          onBeforeMount(() => localStorage.setItem('foo', 'bar'));
           </script>
-
         `,
       },
       async test() {
-        await this.page.goto('http://localhost:3000')
-        expect(await this.page.content()).toMatch('<div>bar</div>')
+        await this.page.goto('http://localhost:3000');
+        const foo = await this.page.waitForSelector('.foo');
+        expect(await foo.evaluate(_ => _.innerText)).toEqual('bar');
       },
     },
     'non-existing': {
       files: {
         'pages/index.vue': endent`
           <template>
-            <div>{{ foo || 'undefined' }}</div>
+            <div class="foo">{{ foo || 'empty' }}</div>
           </template>
 
-          <script>
-          import getLocalStorageItem from '../../src/get-local-storage-item.js'
+          <script setup>
+          import { computed } from '#imports';
 
-          export default {
-            computed: {
-              foo: () => process.browser ? getLocalStorageItem('foo') : undefined,
-            },
-          }
+          import getLocalStorageItem from '../../src/get-local-storage-item.js';
+
+          const foo = computed(() => process.client ? getLocalStorageItem('foo') : undefined);
           </script>
 
         `,
       },
       async test() {
-        await this.page.goto('http://localhost:3000')
-        expect(await this.page.content()).toMatch('<div>undefined</div>')
+        await this.page.goto('http://localhost:3000');
+        const foo = await this.page.waitForSelector('.foo');
+        expect(await foo.evaluate(_ => _.innerText)).toEqual('empty');
       },
     },
   },
   [
     testerPluginTmpDir(),
-    testerPluginPuppeteer(),
+    {
+      async afterEach() {
+        await this.page.close();
+        await this.browser.close();
+      },
+      async beforeEach() {
+        this.browser = await chromium.launch();
+        this.page = await this.browser.newPage();
+      },
+    },
     {
       transform: config => {
-        config = { files: {}, ...config }
+        config = { files: {}, ...config };
 
         return async function () {
-          await outputFiles(config.files)
+          await outputFiles(config.files);
+          const nuxt = execaCommand('nuxt dev');
 
-          const nuxt = execaCommand('nuxt dev')
           try {
-            await nuxtDevReady()
-            await config.test.call(this)
+            await nuxtDevReady();
+            await config.test.call(this);
           } finally {
-            await kill(nuxt.pid)
+            await kill(nuxt.pid);
           }
-        }
+        };
       },
     },
   ],
-)
+);

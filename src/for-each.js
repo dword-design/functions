@@ -1,3 +1,3 @@
-import forEach from 'lodash/forEach.js'
+import forEach from 'lodash/forEach.js';
 
-export default forEach
+export default forEach;

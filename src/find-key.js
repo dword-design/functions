@@ -1,3 +1,3 @@
-import findKey from 'lodash/fp/findKey.js'
+import findKey from 'lodash/fp/findKey.js';
 
-export default findKey.convert({ cap: false })
+export default findKey.convert({ cap: false });

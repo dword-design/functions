@@ -1,1 +1,1 @@
-export default array => array[0]
+export default array => array[0];

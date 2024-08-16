@@ -1,3 +1,3 @@
-import reverse from 'lodash/fp/reverse.js'
+import reverse from 'lodash/fp/reverse.js';
 
-export default reverse
+export default reverse;

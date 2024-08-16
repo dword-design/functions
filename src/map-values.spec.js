@@ -1,4 +1,4 @@
-import mapValues from './map-values.js'
+import mapValues from './map-values.js';
 
 export default {
   valid: () =>
@@ -6,4 +6,4 @@ export default {
       bar: 4,
       foo: 2,
     }),
-}
+};

@@ -1,3 +1,3 @@
-import isEqual from 'lodash/fp/isEqual.js'
+import isEqual from 'lodash/fp/isEqual.js';
 
-export default isEqual
+export default isEqual;

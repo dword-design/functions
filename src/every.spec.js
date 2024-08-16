@@ -1,4 +1,4 @@
-import every from './every.js'
+import every from './every.js';
 
 export default {
   'array false': () => expect([1, 2, 3] |> every(x => x >= 2)).toBeFalsy(),
@@ -7,4 +7,4 @@ export default {
     expect({ bar: 2, baz: 3, foo: 1 } |> every(x => x >= 1)).toBeTruthy(),
   'object true': () =>
     expect({ bar: 2, baz: 3, foo: 1 } |> every(x => x >= 1)).toBeTruthy(),
-}
+};

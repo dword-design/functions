@@ -1,3 +1,3 @@
-import isEmpty from 'lodash/fp/isEmpty.js'
+import isEmpty from 'lodash/fp/isEmpty.js';
 
-export default isEmpty
+export default isEmpty;

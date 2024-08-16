@@ -1,4 +1,4 @@
-import merge from './merge.js'
+import merge from './merge.js';
 
 export default {
   array: () =>
@@ -20,4 +20,4 @@ export default {
     }),
   'same property': () =>
     expect({ foo: 1 } |> merge({ foo: 2 })).toEqual({ foo: 2 }),
-}
+};

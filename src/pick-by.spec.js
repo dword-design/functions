@@ -1,4 +1,4 @@
-import pickBy from './pick-by.js'
+import pickBy from './pick-by.js';
 
 export default {
   key: () =>
@@ -9,4 +9,4 @@ export default {
     expect({ bar: 2, foo: 1 } |> pickBy(value => value === 1)).toEqual({
       foo: 1,
     }),
-}
+};

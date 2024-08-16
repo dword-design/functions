@@ -1,3 +1,3 @@
-import unary from 'lodash/fp/unary.js'
+import unary from 'lodash/fp/unary.js';
 
-export default unary
+export default unary;

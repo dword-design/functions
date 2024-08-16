@@ -1,3 +1,3 @@
-import pick from 'lodash/fp/pick.js'
+import pick from 'lodash/fp/pick.js';
 
-export default pick
+export default pick;

@@ -1,3 +1,3 @@
-import groupBy from 'lodash/fp/groupBy.js'
+import groupBy from 'lodash/fp/groupBy.js';
 
-export default groupBy
+export default groupBy;

@@ -1,4 +1,4 @@
-import filter from './filter.js'
+import filter from './filter.js';
 
 export default {
   array: () =>
@@ -11,4 +11,4 @@ export default {
     expect({ bar: 2, baz: 3, foo: 1 } |> filter(value => value !== 2)).toEqual([
       3, 1,
     ]),
-}
+};

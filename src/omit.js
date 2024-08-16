@@ -1,3 +1,3 @@
-import omit from 'lodash/fp/omit.js'
+import omit from 'lodash/fp/omit.js';
 
-export default omit
+export default omit;

@@ -1,3 +1,3 @@
-import keyBy from 'lodash/fp/keyBy.js'
+import keyBy from 'lodash/fp/keyBy.js';
 
-export default keyBy
+export default keyBy;

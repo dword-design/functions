@@ -1,3 +1,3 @@
-import trimChars from 'lodash/fp/trimChars.js'
+import trimChars from 'lodash/fp/trimChars.js';
 
-export default trimChars
+export default trimChars;

@@ -1,3 +1,3 @@
-import max from 'lodash/max.js'
+import max from 'lodash/max.js';
 
-export default max
+export default max;

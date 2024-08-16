@@ -1,1 +1,1 @@
-export default separator => string => string.split(separator)
+export default separator => string => string.split(separator);

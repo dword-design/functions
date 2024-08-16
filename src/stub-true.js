@@ -1,3 +1,3 @@
-import stubTrue from 'lodash/fp/stubTrue.js'
+import stubTrue from 'lodash/fp/stubTrue.js';
 
-export default stubTrue
+export default stubTrue;

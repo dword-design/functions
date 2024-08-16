@@ -1,3 +1,3 @@
-import ary from 'lodash/ary.js'
+import ary from 'lodash/ary.js';
 
-export default ary
+export default ary;

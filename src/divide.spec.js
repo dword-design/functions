@@ -1,5 +1,3 @@
-import divide from './divide.js'
+import divide from './divide.js';
 
-export default {
-  valid: () => expect(4 |> divide(2)).toEqual(2),
-}
+export default { valid: () => expect(4 |> divide(2)).toEqual(2) };

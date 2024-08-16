@@ -1,3 +1,3 @@
-import constant from 'lodash/fp/constant.js'
+import constant from 'lodash/fp/constant.js';
 
-export default constant
+export default constant;

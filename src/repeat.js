@@ -1,3 +1,3 @@
-import repeat from 'lodash/fp/repeat.js'
+import repeat from 'lodash/fp/repeat.js';
 
-export default repeat
+export default repeat;

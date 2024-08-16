@@ -1,4 +1,4 @@
-import fromPairs from './from-pairs.js'
+import fromPairs from './from-pairs.js';
 
 export default {
   valid: () =>
@@ -8,4 +8,4 @@ export default {
         ['bar', 2],
       ] |> fromPairs,
     ).toEqual({ bar: 2, foo: 1 }),
-}
+};

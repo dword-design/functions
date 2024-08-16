@@ -1,5 +1,5 @@
-import identity from './identity.js'
-import sortBy from './sort-by.js'
+import identity from './identity.js';
+import sortBy from './sort-by.js';
 
 export default {
   array: () =>
@@ -21,4 +21,4 @@ export default {
     ]),
   object: () =>
     expect({ 1: 'foo', 2: 'bar' } |> sortBy(identity)).toEqual(['bar', 'foo']),
-}
+};

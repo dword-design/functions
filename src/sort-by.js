@@ -1,3 +1,3 @@
-import sortBy from 'lodash/fp/sortBy.js'
+import sortBy from 'lodash/fp/sortBy.js';
 
-export default sortBy
+export default sortBy;

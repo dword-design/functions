@@ -1,4 +1,4 @@
-import toPairs from './to-pairs.js'
+import toPairs from './to-pairs.js';
 
 export default {
   valid: () =>
@@ -6,4 +6,4 @@ export default {
       ['bar', 2],
       ['foo', 1],
     ]),
-}
+};

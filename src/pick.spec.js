@@ -1,4 +1,4 @@
-import pick from './pick.js'
+import pick from './pick.js';
 
 export default {
   valid: () =>
@@ -6,4 +6,4 @@ export default {
       bar: 2,
       foo: 1,
     }),
-}
+};

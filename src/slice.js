@@ -1,3 +1,3 @@
 export default (...args) =>
   array =>
-    array.slice(...args)
+    array.slice(...args);

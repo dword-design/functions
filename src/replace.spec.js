@@ -1,4 +1,4 @@
-import replace from './replace.js'
+import replace from './replace.js';
 
 export default {
   found: () =>
@@ -7,4 +7,4 @@ export default {
     expect('foo bar bar' |> replace('baz', 'next')).toEqual('foo bar bar'),
   regex: () =>
     expect('foo foo bar' |> replace(/foo/g, 'baz')).toEqual('baz baz bar'),
-}
+};

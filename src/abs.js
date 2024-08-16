@@ -1,1 +1,1 @@
-export default Math.abs
+export default Math.abs;

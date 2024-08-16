@@ -1,4 +1,4 @@
-import reduce from './reduce.js'
+import reduce from './reduce.js';
 
 export default {
   array: () =>
@@ -15,4 +15,4 @@ export default {
       { bar: 2, baz: 3, foo: 1 }
         |> reduce((result, value) => result + value, ''),
     ).toEqual('231'),
-}
+};

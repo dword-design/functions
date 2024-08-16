@@ -1,3 +1,3 @@
-import multiply from 'lodash/fp/multiply.js'
+import multiply from 'lodash/fp/multiply.js';
 
-export default multiply
+export default multiply;

@@ -1,3 +1,3 @@
-import flatMap from 'lodash/fp/flatMap.js'
+import flatMap from 'lodash/fp/flatMap.js';
 
-export default flatMap.convert({ cap: false })
+export default flatMap.convert({ cap: false });
