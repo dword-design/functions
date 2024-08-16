@@ -24,22 +24,14 @@ export default tester(
 
           const foo = computed(() => process.client ? localStorage.getItem('foo') : undefined);
 
-          onBeforeMount(() => {
-            if (!process.client) {
-              return;
-            }
-            setLocalStorageItem('foo', 'bar');
-          });
+          onBeforeMount(() => setLocalStorageItem('foo', 'bar'));
           </script>
         `,
       },
       async test() {
         await this.page.goto('http://localhost:3000');
-        const button = await this.page.waitForSelector('button');
-        await button.click({ force: true })
-        await new Promise(resolve => setTimeout(resolve, 1000))
         const foo = await this.page.waitForSelector('.foo')
-        expect (await foo.evaluate(_ => _.innerText)).toEqual('bar')
+        expect(await foo.evaluate(_ => _.innerText)).toEqual('bar')
       },
     },
   },
@@ -50,7 +42,7 @@ export default tester(
         await this.page.close();
         await this.browser.close();
       },
-      async before() {
+      async beforeEach() {
         this.browser = await chromium.launch();
         this.page = await this.browser.newPage();
       },
