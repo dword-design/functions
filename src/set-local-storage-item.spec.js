@@ -1,5 +1,4 @@
 import tester from '@dword-design/tester';
-import testerPluginPuppeteer from '@dword-design/tester-plugin-puppeteer';
 import testerPluginTmpDir from '@dword-design/tester-plugin-tmp-dir';
 import { execaCommand } from 'execa';
 import nuxtDevReady from 'nuxt-dev-ready';
@@ -15,8 +14,7 @@ export default tester(
       files: {
         'pages/index.vue': endent`
           <template>
-            <div :class="\`foo \${foo}\`" />
-            <button @click="click" />
+            <div class="foo">{{ foo }}</div>
           </template>
 
           <script setup>
@@ -24,9 +22,7 @@ export default tester(
 
           import setLocalStorageItem from '../../src/set-local-storage-item.js';
 
-          const foo = ref('');
-
-          const click = () => (foo.value = localStorage.getItem('foo'));
+          const foo = computed(() => process.client ? localStorage.getItem('foo') : undefined);
 
           onBeforeMount(() => {
             if (!process.client) {
@@ -39,8 +35,11 @@ export default tester(
       },
       async test() {
         await this.page.goto('http://localhost:3000');
-        await this.page.click('button');
-        await this.page.waitForSelector('.bar')
+        const button = await this.page.waitForSelector('button');
+        await button.click({ force: true })
+        await new Promise(resolve => setTimeout(resolve, 1000))
+        const foo = await this.page.waitForSelector('.foo')
+        expect (await foo.evaluate(_ => _.innerText)).toEqual('bar')
       },
     },
   },
