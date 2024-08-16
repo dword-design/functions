@@ -1,5 +1,3 @@
-import stubArray from './stub-array.js'
+import stubArray from './stub-array.js';
 
-export default {
-  valid: () => expect(stubArray()).toEqual([]),
-}
+export default { valid: () => expect(stubArray()).toEqual([]) };

@@ -1,3 +1,3 @@
-import values from 'lodash/fp/values.js'
+import values from 'lodash/fp/values.js';
 
-export default values
+export default values;

@@ -1,3 +1,3 @@
-import findIndex from 'lodash/fp/findIndex.js'
+import findIndex from 'lodash/fp/findIndex.js';
 
-export default findIndex.convert({ cap: false })
+export default findIndex.convert({ cap: false });

@@ -1,3 +1,3 @@
-import pull from 'lodash/fp/pull.js'
+import pull from 'lodash/fp/pull.js';
 
-export default pull
+export default pull;

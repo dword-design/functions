@@ -1,5 +1,3 @@
-import noop from './noop.js'
+import noop from './noop.js';
 
-export default {
-  valid: () => expect(noop()).toBeUndefined(),
-}
+export default { valid: () => expect(noop()).toBeUndefined() };

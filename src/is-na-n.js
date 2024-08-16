@@ -1,3 +1,3 @@
-import isNaN from 'lodash/fp/isNaN.js'
+import isNaN from 'lodash/fp/isNaN.js';
 
-export default isNaN
+export default isNaN;

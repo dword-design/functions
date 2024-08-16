@@ -1,3 +1,3 @@
-import remove from 'lodash/fp/remove.js'
+import remove from 'lodash/fp/remove.js';
 
-export default remove
+export default remove;

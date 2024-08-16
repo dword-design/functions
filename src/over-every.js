@@ -1,3 +1,3 @@
-import overEvery from 'lodash/fp/overEvery.js'
+import overEvery from 'lodash/fp/overEvery.js';
 
-export default overEvery
+export default overEvery;

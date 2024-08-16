@@ -1,3 +1,3 @@
-import identity from 'lodash/fp/identity.js'
+import identity from 'lodash/fp/identity.js';
 
-export default identity
+export default identity;

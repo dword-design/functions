@@ -1,5 +1,3 @@
-import call from './call.js'
+import call from './call.js';
 
-export default {
-  valid: () => expect((() => 1) |> call).toEqual(1),
-}
+export default { valid: () => expect((() => 1) |> call).toEqual(1) };

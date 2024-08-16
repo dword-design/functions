@@ -1,5 +1,3 @@
-import constant from './constant.js'
+import constant from './constant.js';
 
-export default {
-  valid: () => expect(constant(1)()).toEqual(1),
-}
+export default { valid: () => expect(constant(1)()).toEqual(1) };

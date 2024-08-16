@@ -1,3 +1,3 @@
-import stubFalse from 'lodash/fp/stubFalse.js'
+import stubFalse from 'lodash/fp/stubFalse.js';
 
-export default stubFalse
+export default stubFalse;

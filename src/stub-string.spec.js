@@ -1,5 +1,3 @@
-import stubString from './stub-string.js'
+import stubString from './stub-string.js';
 
-export default {
-  valid: () => expect(stubString()).toEqual(''),
-}
+export default { valid: () => expect(stubString()).toEqual('') };

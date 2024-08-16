@@ -1,4 +1,4 @@
-import endent from './endent.js'
+import endent from './endent.js';
 
 export default {
   'empty first line': () =>
@@ -40,4 +40,4 @@ export default {
           baz
       `,
     ).toEqual('foo\n  bar\n  baz'),
-}
+};

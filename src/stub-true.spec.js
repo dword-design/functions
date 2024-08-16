@@ -1,5 +1,3 @@
-import stubTrue from './stub-true.js'
+import stubTrue from './stub-true.js';
 
-export default {
-  valid: () => expect(stubTrue()).toBeTruthy(),
-}
+export default { valid: () => expect(stubTrue()).toBeTruthy() };

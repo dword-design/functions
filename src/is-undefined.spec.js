@@ -1,4 +1,4 @@
-import isUndefined from './is-undefined.js'
+import isUndefined from './is-undefined.js';
 
 export default {
   array: () => expect([] |> isUndefined).toBeFalsy(),
@@ -6,4 +6,4 @@ export default {
   object: () => expect({} |> isUndefined).toBeFalsy(),
   string: () => expect('' |> isUndefined).toBeFalsy(),
   undefined: () => expect(undefined |> isUndefined).toBeTruthy(),
-}
+};

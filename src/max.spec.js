@@ -1,5 +1,3 @@
-import max from './max.js'
+import max from './max.js';
 
-export default {
-  valid: () => expect([1, 3, 6, 4] |> max).toEqual(6),
-}
+export default { valid: () => expect([1, 3, 6, 4] |> max).toEqual(6) };

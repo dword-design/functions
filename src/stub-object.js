@@ -1,3 +1,3 @@
-import stubObject from 'lodash/fp/stubObject.js'
+import stubObject from 'lodash/fp/stubObject.js';
 
-export default stubObject
+export default stubObject;

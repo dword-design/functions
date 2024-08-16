@@ -1,4 +1,4 @@
-import overEvery from './over-every.js'
+import overEvery from './over-every.js';
 
 export default {
   'multiple false': () =>
@@ -19,4 +19,4 @@ export default {
     ).toBeTruthy(),
   'single false': () => expect(1 |> overEvery(x => x === 2)).toBeFalsy(),
   'single true': () => expect(1 |> overEvery(x => x === 1)).toBeTruthy(),
-}
+};

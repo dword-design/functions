@@ -1,4 +1,4 @@
-import map from './map.js'
+import map from './map.js';
 
 export default {
   key: () =>
@@ -8,4 +8,4 @@ export default {
   property: () =>
     expect([{ foo: 1 }, { foo: 2 }] |> map('foo')).toEqual([1, 2]),
   value: () => expect([1, 2, 3] |> map(value => value * 2)).toEqual([2, 4, 6]),
-}
+};

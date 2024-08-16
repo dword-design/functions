@@ -1,3 +1,3 @@
-import stubArray from 'lodash/fp/stubArray.js'
+import stubArray from 'lodash/fp/stubArray.js';
 
-export default stubArray
+export default stubArray;

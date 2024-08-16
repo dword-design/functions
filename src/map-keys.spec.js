@@ -1,4 +1,4 @@
-import mapKeys from './map-keys.js'
+import mapKeys from './map-keys.js';
 
 export default {
   key: () =>
@@ -11,4 +11,4 @@ export default {
       key1: 1,
       key2: 2,
     }),
-}
+};

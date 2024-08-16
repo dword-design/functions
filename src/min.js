@@ -1,3 +1,3 @@
-import min from 'lodash/min.js'
+import min from 'lodash/min.js';
 
-export default min
+export default min;

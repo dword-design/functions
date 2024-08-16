@@ -1,3 +1,3 @@
-import keys from 'lodash/fp/keys.js'
+import keys from 'lodash/fp/keys.js';
 
-export default keys
+export default keys;

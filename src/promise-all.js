@@ -1,1 +1,1 @@
-export default promises => Promise.all(promises)
+export default promises => Promise.all(promises);

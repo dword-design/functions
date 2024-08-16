@@ -1,4 +1,4 @@
-import omitBy from './omit-by.js'
+import omitBy from './omit-by.js';
 
 export default {
   key: () =>
@@ -9,4 +9,4 @@ export default {
     expect({ bar: 2, foo: 1 } |> omitBy(value => value === 1)).toEqual({
       bar: 2,
     }),
-}
+};

@@ -1,3 +1,3 @@
-import uniq from 'lodash/fp/uniq.js'
+import uniq from 'lodash/fp/uniq.js';
 
-export default uniq
+export default uniq;

@@ -1,5 +1,4 @@
 export default arg => {
-  console.log(arg)
-
-  return arg
-}
+  console.log(arg);
+  return arg;
+};

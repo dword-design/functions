@@ -1,5 +1,3 @@
-import stubObject from './stub-object.js'
+import stubObject from './stub-object.js';
 
-export default {
-  valid: () => expect(stubObject()).toEqual({}),
-}
+export default { valid: () => expect(stubObject()).toEqual({}) };

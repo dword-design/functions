@@ -1,3 +1,3 @@
-import range from 'lodash/range.js'
+import range from 'lodash/range.js';
 
-export default range
+export default range;

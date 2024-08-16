@@ -1,4 +1,4 @@
-import groupBy from './group-by.js'
+import groupBy from './group-by.js';
 
 export default {
   valid: () =>
@@ -15,4 +15,4 @@ export default {
         { bar: 2, x: 'foo' },
       ],
     }),
-}
+};

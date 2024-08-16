@@ -1,3 +1,3 @@
-import startsWith from 'lodash/fp/startsWith.js'
+import startsWith from 'lodash/fp/startsWith.js';
 
-export default startsWith
+export default startsWith;

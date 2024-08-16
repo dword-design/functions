@@ -1,3 +1,3 @@
-import invokeArgs from 'lodash/fp/invokeArgs.js'
+import invokeArgs from 'lodash/fp/invokeArgs.js';
 
-export default invokeArgs
+export default invokeArgs;

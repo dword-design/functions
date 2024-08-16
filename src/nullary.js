@@ -1,1 +1,1 @@
-export default func => () => func()
+export default func => () => func();

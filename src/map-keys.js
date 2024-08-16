@@ -1,3 +1,3 @@
-import mapKeys from 'lodash/fp/mapKeys.js'
+import mapKeys from 'lodash/fp/mapKeys.js';
 
-export default mapKeys.convert({ cap: false })
+export default mapKeys.convert({ cap: false });

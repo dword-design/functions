@@ -1,5 +1,3 @@
-import stubFalse from './stub-false.js'
+import stubFalse from './stub-false.js';
 
-export default {
-  valid: () => expect(stubFalse()).toBeFalsy(),
-}
+export default { valid: () => expect(stubFalse()).toBeFalsy() };

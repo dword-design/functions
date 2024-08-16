@@ -1,3 +1,3 @@
-import compact from 'lodash/fp/compact.js'
+import compact from 'lodash/fp/compact.js';
 
-export default compact
+export default compact;

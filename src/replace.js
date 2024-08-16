@@ -1,3 +1,3 @@
-import replace from 'lodash/fp/replace.js'
+import replace from 'lodash/fp/replace.js';
 
-export default replace
+export default replace;

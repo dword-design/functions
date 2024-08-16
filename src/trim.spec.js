@@ -1,5 +1,3 @@
-import trim from './trim.js'
+import trim from './trim.js';
 
-export default {
-  valid: () => expect('  foo  ' |> trim).toEqual('foo'),
-}
+export default { valid: () => expect('  foo  ' |> trim).toEqual('foo') };

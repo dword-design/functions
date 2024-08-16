@@ -1,3 +1,3 @@
-import times from 'lodash/times.js'
+import times from 'lodash/times.js';
 
-export default times
+export default times;

@@ -1,4 +1,4 @@
-import keyBy from './key-by.js'
+import keyBy from './key-by.js';
 
 export default {
   valid: () =>
@@ -8,4 +8,4 @@ export default {
         { x: 'bar', y: 2 },
       ] |> keyBy('x'),
     ).toEqual({ bar: { x: 'bar', y: 2 }, foo: { x: 'foo', y: 1 } }),
-}
+};

@@ -1,3 +1,3 @@
-import isUndefined from 'lodash/fp/isUndefined.js'
+import isUndefined from 'lodash/fp/isUndefined.js';
 
-export default isUndefined
+export default isUndefined;

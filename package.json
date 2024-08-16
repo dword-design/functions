@@ -38,9 +38,10 @@
     "globby": "^14.0.1",
     "measure-time": "^5.0.1",
     "mock-stdio": "^1.0.3",
-    "nuxt": "^2",
+    "nuxt": "^3.12.4",
     "nuxt-dev-ready": "^3.0.0",
     "output-files": "^2.0.0",
+    "playwright": "^1.46.0",
     "tree-kill-promise": "^3.0.14"
   },
   "engines": {

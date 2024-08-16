@@ -1,3 +1,3 @@
-import uniqBy from 'lodash/fp/uniqBy.js'
+import uniqBy from 'lodash/fp/uniqBy.js';
 
-export default uniqBy
+export default uniqBy;
