@@ -1,3 +1,10 @@
+## [6.0.2](https://github.com/dword-design/functions/compare/v6.0.1...v6.0.2) (2025-04-13)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#171](https://github.com/dword-design/functions/issues/171)) ([1411d67](https://github.com/dword-design/functions/commit/1411d677910939ec668c061175ab77d46b761656))
+
 ## [6.0.1](https://github.com/dword-design/functions/compare/v6.0.0...v6.0.1) (2024-08-16)
 
 
