@@ -28,7 +28,7 @@
     "tinycolor2": "^1.6.0"
   },
   "devDependencies": {
-    "@dword-design/base": "^11.2.9",
+    "@dword-design/base": "^11.2.10",
     "@dword-design/tester": "^2.0.19",
     "@dword-design/tester-plugin-tmp-dir": "^2.1.26",
     "camel-case": "^5.0.0",

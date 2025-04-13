@@ -22,8 +22,8 @@ importers:
         version: 1.6.0
     devDependencies:
       '@dword-design/base':
-        specifier: ^11.2.9
-        version: 11.2.9(@babel/core@7.26.10)(@types/node@22.14.1)(@typescript-eslint/parser@8.29.1(eslint@8.57.1)(typescript@5.8.3))(babel-plugin-module-resolver@5.0.2)(jest@27.5.1)(typescript@5.8.3)
+        specifier: ^11.2.10
+        version: 11.2.10(@babel/core@7.26.10)(@types/node@22.14.1)(@typescript-eslint/parser@8.29.1(eslint@8.57.1)(typescript@5.8.3))(babel-plugin-module-resolver@5.0.2)(jest@27.5.1)(typescript@5.8.3)
       '@dword-design/tester':
         specifier: ^2.0.19
         version: 2.0.19
@@ -801,8 +801,8 @@ packages:
     resolution: {integrity: sha512-xFAj86B+KzUZfK2ETpiTfG+tO0EJvZSYhBdzcnTmrPj6RXRtDpR0svhQ5u+9piuGjr6ffK+vuHsAOzlZnNvM1w==}
     engines: {node: '>=18'}
 
-  '@dword-design/base@11.2.9':
-    resolution: {integrity: sha512-fg7nAmxObrUh+//0jPtZzqfsgfBDdnRU0apJIlVjrktscvUzGPtmWsGSZ5u71gpW60EW5A7AOu3tB42rlhQIxw==}
+  '@dword-design/base@11.2.10':
+    resolution: {integrity: sha512-HQJdJyQzVLNPdwmuFonz/j+3Dc258XCdPb/ljxzZ94p/B8E95uTa86ZBwbceAGt44WORf/HafivW0FoTVKnfrw==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -8947,7 +8947,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@dword-design/base@11.2.9(@babel/core@7.26.10)(@types/node@22.14.1)(@typescript-eslint/parser@8.29.1(eslint@8.57.1)(typescript@5.8.3))(babel-plugin-module-resolver@5.0.2)(jest@27.5.1)(typescript@5.8.3)':
+  '@dword-design/base@11.2.10(@babel/core@7.26.10)(@types/node@22.14.1)(@typescript-eslint/parser@8.29.1(eslint@8.57.1)(typescript@5.8.3))(babel-plugin-module-resolver@5.0.2)(jest@27.5.1)(typescript@5.8.3)':
     dependencies:
       '@commitlint/cli': 18.6.1(@types/node@22.14.1)(typescript@5.8.3)
       '@commitlint/config-conventional': 18.6.3
