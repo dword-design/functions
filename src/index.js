@@ -51,6 +51,7 @@ import maxBy from './max-by.js';
 import merge from './merge.js';
 import mergeAll from './merge-all.js';
 import min from './min.js';
+import minBy from './min-by.js';
 import multiply from './multiply.js';
 import negate from './negate.js';
 import noop from './noop.js';
@@ -119,6 +120,7 @@ export {
   keys,
   max,
   maxBy,
+  minBy,
   stubArray,
   stubObject,
   join,
